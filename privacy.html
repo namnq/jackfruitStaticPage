@@ -58,7 +58,11 @@
         --display: "Outfit", system-ui, -apple-system, sans-serif;
         --sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
         --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-        --spring: cubic-bezier(0.32, 0.72, 0, 1);
+        --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+        --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+        --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+        --spring: var(--ease-drawer);
+        scrollbar-color: rgba(45, 212, 191, 0.28) var(--bg);
       }
 
       [data-theme="light"] {
@@ -81,6 +85,7 @@
         --accent-ink: #ffffff;
         --shadow-ambient: 0 24px 56px -18px rgba(11, 21, 38, 0.12);
         --glass-nav: rgba(255, 255, 255, 0.82);
+        scrollbar-color: rgba(13, 148, 136, 0.32) var(--bg);
       }
 
       * {
@@ -88,6 +93,15 @@
       }
       html {
         scroll-behavior: smooth;
+        caret-color: var(--accent);
+      }
+      ::selection {
+        background: rgba(20, 184, 166, 0.26);
+        color: var(--ink);
+      }
+      :focus-visible {
+        outline: 2px solid var(--accent-strong);
+        outline-offset: 3px;
       }
       body {
         margin: 0;
@@ -100,6 +114,8 @@
       }
       a {
         color: inherit;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 1px;
       }
       img,
       svg {

