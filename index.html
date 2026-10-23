@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="color-scheme" content="dark light" />
+    <meta name="color-scheme" content="light dark" />
     <title>Galaxy Apps | Automated Shopify Theme Security &amp; Cloud Backups</title>
     <meta
       name="description"
@@ -124,8 +124,8 @@
     <style>
       /* ==========================================================================
          TASTE-SKILL DESIGN SYSTEM: ETHEREAL GLASS & DOUBLE-BEZEL ARCHITECTURE
-         Page Theme Lock: Single cohesive theme across all sections (Dark default,
-         full Light parity via [data-theme="light"]).
+         Page Theme Lock: Single cohesive theme across all sections (Light default,
+         full Dark parity via [data-theme="dark"]).
          Single Accent Lock: Emerald-Teal (#14b8a6 / #0d9488).
          Shape Consistency Lock: Concentric squircle hierarchy (28px shell / 22px core / 999px interactive pills).
          ========================================================================== */
@@ -2197,8 +2197,6 @@
         var saved = localStorage.getItem('galaxy_theme');
         if (saved === 'light' || saved === 'dark') {
           root.setAttribute('data-theme', saved);
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-          root.setAttribute('data-theme', 'light');
         }
         var themeBtn = document.getElementById('themeToggle');
         if (themeBtn) {
