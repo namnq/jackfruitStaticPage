@@ -115,13 +115,7 @@
             "operatingSystem": "Shopify",
             "url": "https://apps.shopify.com/ordersafe-auto-backup",
             "author": { "@id": "https://galaxy-apps.com/#organization" },
-            "description": "Automatic Shopify order backup and recovery delivered to email and cloud storage.",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "bestRating": "5",
-              "ratingCount": "1"
-            }
+            "description": "Automatic Shopify order backup and recovery delivered to email and cloud storage."
           }
         ]
       }
@@ -614,6 +608,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         gap: 12px;
         padding: 14px 18px;
         border-bottom: 1px solid var(--line);
@@ -705,6 +700,12 @@
       .chip-clean {
         background: var(--accent-soft);
         color: var(--accent-strong);
+      }
+      .chip-demo {
+        background: var(--shell-bg);
+        color: var(--ink-2);
+        border: 1px solid var(--line);
+        text-transform: none;
       }
 
       .scanner-code-view {
@@ -1088,6 +1089,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         gap: 12px;
         font-family: var(--mono);
         font-size: 0.75rem;
@@ -1691,7 +1693,10 @@
                   <span class="live-indicator" aria-hidden="true"></span>
                   <span>admin.shopify.com / themesafe-security / Dawn 15.2.0</span>
                 </div>
-                <span class="status-chip chip-clean tabular" id="heroScanScore">Score 92/100</span>
+                <span style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap">
+                  <span class="status-chip chip-clean tabular" id="heroScanScore">Score 92/100</span>
+                  <span class="status-chip chip-demo">Example scan</span>
+                </span>
               </div>
 
               <div class="scanner-tabs" id="heroScannerTabs" role="tablist" aria-label="Select theme file to inspect">
@@ -1741,7 +1746,7 @@
         <div class="wrap ledger-grid">
           <div class="ledger-cell tabular">
             <strong>5.0 ★</strong>
-            <span>Rated 5.0 out of 5 across 8 verified Shopify App Store reviews</span>
+            <span>Rated 5.0 out of 5 across 7 verified Shopify App Store reviews</span>
           </div>
           <div class="ledger-cell tabular">
             <strong>3 Live Apps</strong>
@@ -1804,6 +1809,15 @@
                   <div class="cap-tile">
                     <strong>Zero Storefront Impact</strong>
                     <span>Reads files via OAuth in the background and never injects tracking scripts into your live storefront.</span>
+                  </div>
+
+                  <div class="cap-tile">
+                    <strong>One-Click Fix with Undo</strong>
+                    <span>Fix malicious scripts in one click, with undo — every change stays reversible.</span>
+                  </div>
+                  <div class="cap-tile">
+                    <strong>Checkout Shield (Pro &amp; Enterprise)</strong>
+                    <span>An app embed for the theme editor that alerts you when a script redirects shoppers away from your checkout or tampers with checkout links, and blocks fake checkout redirects.</span>
                   </div>
                 </div>
 
@@ -1870,7 +1884,7 @@
                       <line x1="128" y1="229.6" x2="128" y2="129.08" />
                     </svg>
                   </div>
-                  <span class="app-rating-badge tabular">5.0 ★ (1 review) · Dec 2025</span>
+                  <span class="app-rating-badge tabular">Launched Dec 2025</span>
                 </div>
 
                 <h3>OrderSafe - Auto Backup</h3>
@@ -1885,7 +1899,7 @@
                 </div>
 
                 <div class="app-footer-bar">
-                  <span class="price-tag">Flexible merchant plans</span>
+                  <span class="price-tag tabular"><strong>Free plan</strong> · Premium $10/mo</span>
                   <a class="text-action" href="https://apps.shopify.com/ordersafe-auto-backup" target="_blank" rel="noopener">
                     Install OrderSafe Backup →
                   </a>
@@ -1928,7 +1942,10 @@
             <div class="bezel-core">
               <div class="diff-header">
                 <span id="wbFileHeader">layout/theme.liquid · OAuth Snapshot #312</span>
-                <span class="status-chip chip-clean" id="wbStatusBadge">312 Files Indexed</span>
+                <span style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap">
+                  <span class="status-chip chip-clean" id="wbStatusBadge">312 Files Indexed</span>
+                  <span class="status-chip chip-demo">Example scan</span>
+                </span>
               </div>
               <div class="diff-body morph-target" id="wbDiffBody">
                 <pre class="diff-code" id="wbCodeBlock"><code>&lt;!-- Dawn 15.2.0 · Read-only Shopify Admin API sync --&gt;
@@ -2142,6 +2159,7 @@
               <li><a href="https://apps.shopify.com/theme-backup-1" target="_blank" rel="noopener">ThemeSafe - Auto Backup</a></li>
               <li><a href="https://apps.shopify.com/ordersafe-auto-backup" target="_blank" rel="noopener">OrderSafe - Auto Backup</a></li>
               <li><a href="https://apps.shopify.com/partners/susu5" target="_blank" rel="noopener">Shopify Partner Profile</a></li>
+              <li><a href="https://github.com/GalaxSquad" target="_blank" rel="noopener">GitHub (GalaxSquad)</a></li>
             </ul>
           </div>
 
